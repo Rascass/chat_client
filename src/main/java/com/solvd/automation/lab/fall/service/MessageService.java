@@ -1,8 +1,10 @@
 package com.solvd.automation.lab.fall.service;
 
+import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.dao.MessageDao;
 import com.solvd.automation.lab.fall.dao.impl.sqlite.MessageImplSqlite;
 import com.solvd.automation.lab.fall.domain.Message;
+import com.solvd.automation.lab.fall.io.PropertyReader;
 import com.solvd.automation.lab.fall.util.SqliteHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +14,7 @@ import java.util.List;
 public class MessageService extends BaseService{
     private static final Logger LOGGER = LoggerFactory.getLogger(SqliteHandler.class);
 
-    MessageDao messageDao = new MessageImplSqlite();
+    MessageDao messageDao = MESSAGE_DAOS.get(PROPERTY_READER.getValue(PropertyConstant.ENV_KEY));
 
     public Message create(Message message) {
         LOGGER.info("Creating message: " + message);
