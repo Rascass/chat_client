@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Confi 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <properties resource="config.properties">
+        <property name="url" value="url" />
+        <property name="driver" value="driver" />
+    </properties>
+    <typeHandlers>
+        <!-- ... -->
+        <typeHandler handler="org.apache.ibatis.type.InstantTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.LocalDateTimeTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.LocalDateTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.LocalTimeTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.OffsetDateTimeTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.OffsetTimeTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.ZonedDateTimeTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.YearTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.MonthTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.YearMonthTypeHandler" />
+        <typeHandler handler="org.apache.ibatis.type.JapaneseDateTypeHandler" />
+    </typeHandlers>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mappers/message_mapper.xml"/>
+    </mappers>
+</configuration>
