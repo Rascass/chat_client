@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="message_mapper">
+    <insert id="create">
+        INSERT INTO Messages (isDraft, dispatchTime, content, clientFromId, clientToId)
+        VALUES (#{isDraft},#{dispatchTime},#{content},#{clientFromId},#{clientToId});
+    </insert>
+
+    <select id="findById" resultMap="message_map">
+        select * from Messages
+        where id =#{id};
+    </select>
+
+    <select id="findAll" resultMap="message_map">
+        select * from Messages
+    </select>
+
+    <update id="update">
+        UPDATE Messages
+        SET
+        isDraft = #{isDraft},
+        dispatchTime = #{dispatchTime},
+        content = #{content},
+        clientFromId = #{clientFromId},
+        clientToId= #{clientToId}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM Messages
+        WHERE id = #{id};
+    </delete>
+
+    <resultMap id="message_map" type="com.solvd.automation.lab.fall.domain.Message"
+               autoMapping="false">
+        <id property="id" column="id"/>
+        <result property="isDraft" column="isDraft"/>
+        <result property="dispatchTime" column="dispatchTime"/>
+        <result property="content" column="content"/>
+        <result property="clientFromId" column="clientFromId"/>
+        <result property="clientToId" column="clientToId"/>
+    </resultMap>
+</mapper>
