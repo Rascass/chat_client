@@ -634,3 +634,31 @@
 2020:-12-16 01:29:24 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@592e843a]
 2020:-12-16 01:29:24 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@592e843a]
 2020:-12-16 01:29:24 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1496220730 to pool.
+2020:-12-16 01:40:35 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding message with id: 12
+2020:-12-16 01:40:35 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020:-12-16 01:40:35 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020:-12-16 01:40:35 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020:-12-16 01:40:35 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2020:-12-16 01:40:36 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1572745406.
+2020:-12-16 01:40:36 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5dbe30be]
+2020:-12-16 01:40:36 [main] DEBUG message_mapper.findById - ==>  Preparing: select * from Messages where id =?;
+2020:-12-16 01:40:36 [main] DEBUG message_mapper.findById - ==> Parameters: 12(Integer)
+2020:-12-16 01:40:36 [main] DEBUG message_mapper.findById - <==      Total: 1
+2020:-12-16 01:40:36 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5dbe30be]
+2020:-12-16 01:40:36 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5dbe30be]
+2020:-12-16 01:40:36 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1572745406 to pool.
+2020:-12-16 01:40:36 [main] INFO  automation.lab.fall.util.SqliteHandler - Message{id=12, isDraft=false, dispatchTime=Wed Dec 16 01:20:25 MSK 2020, content='Hello', clientFromId=14, clientToId=22}
+2020:-12-16 02:15:24 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding all records in messages
+2020:-12-16 02:15:24 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020:-12-16 02:15:24 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020:-12-16 02:15:24 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1971152916.
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
+2020:-12-16 02:15:25 [main] DEBUG message_mapper.findAll - ==>  Preparing: select * from Messages
+2020:-12-16 02:15:25 [main] DEBUG message_mapper.findAll - ==> Parameters: 
+2020:-12-16 02:15:25 [main] DEBUG message_mapper.findAll - <==      Total: 2
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
+2020:-12-16 02:15:25 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1971152916 to pool.
+2020:-12-16 02:15:25 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: [Message{id=12, isDraft=false, dispatchTime=Wed Dec 16 01:20:25 MSK 2020, content='Hello', clientFromId=14, clientToId=22}, Message{id=13, isDraft=false, dispatchTime=Wed Dec 16 01:29:13 MSK 2020, content='Goodbye', clientFromId=14, clientToId=22}]
