@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-public class MessageService {
+public class MessageService extends BaseService{
     private static final Logger LOGGER = LoggerFactory.getLogger(SqliteHandler.class);
 
     MessageDao messageDao = new MessageImplSqlite();
