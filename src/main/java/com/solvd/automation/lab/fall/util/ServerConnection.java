@@ -1,7 +1,7 @@
 package com.solvd.automation.lab.fall.util;
 
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.domain.parser.Parser;
+import com.solvd.automation.lab.fall.parser.Parser;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
 import com.solvd.automation.lab.fall.io.PropertyReader;
 
@@ -32,7 +32,7 @@ public class ServerConnection implements Runnable {
         }
     }
 
-    public static ServerConnection createAuthorization() {
+    public static ServerConnection getServerConnection() {
         if (instance == null) {
             instance = new ServerConnection();
         }
@@ -44,23 +44,22 @@ public class ServerConnection implements Runnable {
     public void run() {
 
         this.logIn();
-
-        this.getResponse();
+        this.serverResponseListener();
     }
 
     private void logIn() {
         String message = "{\"login\":\"" + login + "\",\"password\":" + passHash + "}";
 
-        try {
-            writer.write(message);
-            writer.newLine();
-            writer.flush();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
+        sendMessageToServer(message);
     }
 
-    private void getResponse() {
+    public void findContact(String contactLogin) {
+        String message = "{\"contactLogin\":\"" + contactLogin + "\"}";
+
+        sendMessageToServer(message);
+    }
+
+    private void serverResponseListener() {
         String response;
 
         try {
@@ -74,12 +73,22 @@ public class ServerConnection implements Runnable {
         }
     }
 
-    public void close(){
+    public void sendMessageToServer(String message) {
+        try {
+            writer.write(message);
+            writer.newLine();
+            writer.flush();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void close() {
         try {
             reader.close();
             writer.close();
             socket.close();
-        }catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
     }

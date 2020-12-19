@@ -1,8 +1,8 @@
-package com.solvd.automation.lab.fall.domain.parser;
+package com.solvd.automation.lab.fall.parser;
 
 public enum Pattern {
     LOGIN_RESPONSE_PATTERN("code", "description"),
-    SESSION_RESPONSE_PATTERN("code", "connection");
+    CONTACT_RESPONSE_PATTERN("code", "connection");
 
     private final String[] options;
 

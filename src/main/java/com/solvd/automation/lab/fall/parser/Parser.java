@@ -1,5 +1,6 @@
-package com.solvd.automation.lab.fall.domain.parser;
+package com.solvd.automation.lab.fall.parser;
 
+import com.solvd.automation.lab.fall.domain.responseHandler.ContactClientResponse;
 import com.solvd.automation.lab.fall.domain.responseHandler.LogInResponse;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
 import org.slf4j.Logger;
@@ -22,7 +23,13 @@ public class Parser {
             LogInResponse logInResponse = new LogInResponse(response);
 
             Thread thread = new Thread(logInResponse);
+            thread.start();
 
+        } else if (isFieldsEqualTo(fields, Pattern.CONTACT_RESPONSE_PATTERN)) {
+
+            ContactClientResponse contactClientResponse = new ContactClientResponse(response);
+
+            Thread thread = new Thread(contactClientResponse);
             thread.start();
         } else {
             throw new UnknownResponsePattern("Can't determine response pattern");
@@ -47,22 +54,21 @@ public class Parser {
     }
 
     private static boolean isFieldsEqualTo(List<String> fields, Pattern responsePattern) {
-        boolean isEqual = true;
         String[] patternFields = responsePattern.getOptions();
 
         if (fields.size() == patternFields.length) {
 
-            for (int i = 0; i < fields.size() && isEqual; i++) {
+            for (int i = 0; i < fields.size(); i++) {
                 if (!fields.get(i).equals(patternFields[i])) {
-                    isEqual = false;
+                    return false;
                 }
             }
 
         } else {
-            isEqual = false;
+            return false;
         }
 
-        return isEqual;
+        return true;
     }
 
 }

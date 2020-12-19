@@ -9,22 +9,26 @@ import java.awt.event.ActionListener;
 import java.util.Objects;
 
 public class AuthorizationGui {
+    private JFrame mainFrame;
     private JPanel authorizationPanel;
     private JTextField userLogin;
     private JPasswordField userPassword;
     private JButton sendButton;
     private JButton registerButton;
-    private Thread authorizationThread;
+    private Thread ServerThread;
     private ServerConnection serverConnectionRunnable;
 
-    public JPanel getAuthorizationPanel() {
+    public JFrame getAuthorizationFrame() {
+        serverConnectionRunnable = ServerConnection.getServerConnection();
+        ServerThread = new Thread(serverConnectionRunnable);
 
-        serverConnectionRunnable = ServerConnection.createAuthorization();
-        authorizationThread = new Thread(serverConnectionRunnable);
+        mainFrame = new JFrame();
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         authorizationPanel = new JPanel();
         SpringLayout authorizationLayout = new SpringLayout();
         authorizationPanel.setLayout(authorizationLayout);
+        mainFrame.getContentPane().add(authorizationPanel);
 
         JPanel loginPanel = new JPanel();
         GridLayout loginLayout = new GridLayout(2, 2, 5, 12);
@@ -57,7 +61,11 @@ public class AuthorizationGui {
                 SpringLayout.NORTH,authorizationPanel);
         authorizationLayout.putConstraint(SpringLayout.NORTH, buttonBox,80,
                 SpringLayout.NORTH,authorizationPanel);
-        return authorizationPanel;
+
+        mainFrame.setSize(350, 160);
+        mainFrame.setVisible(true);
+
+        return mainFrame;
     }
 
     public class SendButtonActionListener implements ActionListener {
@@ -69,7 +77,7 @@ public class AuthorizationGui {
             int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
             serverConnectionRunnable.setPassHash(passHash);
 
-            authorizationThread.start();
+            ServerThread.start();
         }
     }
 }

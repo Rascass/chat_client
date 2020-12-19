@@ -1,6 +1,9 @@
 package com.solvd.automation.lab.fall.domain.responseHandler;
 
+import com.solvd.automation.lab.fall.domain.Gui.ClientGui;
+import com.solvd.automation.lab.fall.domain.Gui.MessengerGui;
 import com.solvd.automation.lab.fall.domain.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.domain.userServer.MyServer;
 
 public class LogInResponse implements Runnable {
 
@@ -20,6 +23,21 @@ public class LogInResponse implements Runnable {
     @Override
     public void run() {
         QuickMessageGui quickMessageGui = new QuickMessageGui();
-        quickMessageGui.go(description + ", with code: " + code);
+
+        if (code.equals("\"0\"")) {
+
+            ClientGui.resetFrameTo(new MessengerGui().getMessengerFrame());
+
+            MyServer server = new MyServer();
+            Thread serverThread = new Thread(server);
+            serverThread.start();
+
+            quickMessageGui.go(description + ", with code: " + code);
+
+        } else if (code.equals("\"-1\"")) {
+            quickMessageGui.go(description + ", with code: " + code);
+        } else {
+
+        }
     }
 }

@@ -4,17 +4,15 @@ import javax.swing.*;
 
 public class ClientGui {
 
-    private static JFrame mainFrame;
+    private static JFrame appFrame;
 
     public static void main(String[] args) {
 
-        mainFrame = new JFrame();
-        AuthorizationGui authorizationGui = new AuthorizationGui();
+        appFrame = new AuthorizationGui().getAuthorizationFrame();
+    }
 
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.getContentPane().add(authorizationGui.getAuthorizationPanel());
-
-        mainFrame.setSize(350, 160);
-        mainFrame.setVisible(true);
+    public static void resetFrameTo(JFrame toFrame){
+        appFrame.dispose();
+        appFrame = toFrame;
     }
 }
