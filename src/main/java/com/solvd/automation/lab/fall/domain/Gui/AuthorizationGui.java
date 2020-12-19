@@ -1,13 +1,11 @@
 package com.solvd.automation.lab.fall.domain.Gui;
 
-import com.solvd.automation.lab.fall.util.Authorization;
+import com.solvd.automation.lab.fall.util.ServerConnection;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 import java.util.Objects;
 
 public class AuthorizationGui {
@@ -17,12 +15,12 @@ public class AuthorizationGui {
     private JButton sendButton;
     private JButton registerButton;
     private Thread authorizationThread;
-    private Authorization authorizationRunnable;
+    private ServerConnection serverConnectionRunnable;
 
     public JPanel getAuthorizationPanel() {
 
-        authorizationRunnable = Authorization.createAuthorization();
-        authorizationThread = new Thread(authorizationRunnable);
+        serverConnectionRunnable = ServerConnection.createAuthorization();
+        authorizationThread = new Thread(serverConnectionRunnable);
 
         authorizationPanel = new JPanel();
         SpringLayout authorizationLayout = new SpringLayout();
@@ -66,10 +64,10 @@ public class AuthorizationGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            authorizationRunnable.setLogin(userLogin.getText());
+            serverConnectionRunnable.setLogin(userLogin.getText());
 
             int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
-            authorizationRunnable.setPassHash(passHash);
+            serverConnectionRunnable.setPassHash(passHash);
 
             authorizationThread.start();
         }

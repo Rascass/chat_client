@@ -14,7 +14,7 @@ public class ClientGui {
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.getContentPane().add(authorizationGui.getAuthorizationPanel());
 
-        mainFrame.setSize(350, 180);
+        mainFrame.setSize(350, 160);
         mainFrame.setVisible(true);
     }
 }

@@ -18,7 +18,12 @@ public class Parser {
         List<String> fields = Parser.findMessageFields(response);
 
         if (isFieldsEqualTo(fields, Pattern.LOGIN_RESPONSE_PATTERN)) {
-            LogInResponse.handleResponse(response);
+
+            LogInResponse logInResponse = new LogInResponse(response);
+
+            Thread thread = new Thread(logInResponse);
+
+            thread.start();
         } else {
             throw new UnknownResponsePattern("Can't determine response pattern");
         }

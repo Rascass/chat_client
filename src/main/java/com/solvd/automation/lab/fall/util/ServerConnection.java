@@ -9,16 +9,16 @@ import java.io.*;
 import java.net.Socket;
 
 
-public class Authorization implements Runnable {
+public class ServerConnection implements Runnable {
 
-    private static Authorization instance = null;
+    private static ServerConnection instance = null;
     private Socket socket;
     private BufferedReader reader;
     private BufferedWriter writer;
     private String login;
     private int passHash;
 
-    private Authorization() {
+    private ServerConnection() {
 
         String ip = PropertyReader.getInstance().getValue(PropertyConstant.IP_KEY);
         int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.PORT_KEY));
@@ -32,9 +32,9 @@ public class Authorization implements Runnable {
         }
     }
 
-    public static Authorization createAuthorization() {
+    public static ServerConnection createAuthorization() {
         if (instance == null) {
-            instance = new Authorization();
+            instance = new ServerConnection();
         }
 
         return instance;
@@ -44,8 +44,8 @@ public class Authorization implements Runnable {
     public void run() {
 
         this.logIn();
-        this.getResponse();
 
+        this.getResponse();
     }
 
     private void logIn() {
