@@ -2,17 +2,14 @@ package com.solvd.automation.lab.fall.service;
 
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.dao.MessageDao;
-import com.solvd.automation.lab.fall.dao.impl.sqlite.MessageImplSqlite;
-import com.solvd.automation.lab.fall.domain.Message;
-import com.solvd.automation.lab.fall.io.PropertyReader;
-import com.solvd.automation.lab.fall.util.SqliteHandler;
+import com.solvd.automation.lab.fall.domain.message.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 public class MessageService extends BaseService{
-    private static final Logger LOGGER = LoggerFactory.getLogger(SqliteHandler.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MessageService.class);
 
     MessageDao messageDao = MESSAGE_DAOS.get(PROPERTY_READER.getValue(PropertyConstant.ENV_KEY));
 

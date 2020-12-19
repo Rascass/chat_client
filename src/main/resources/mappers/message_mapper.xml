@@ -33,7 +33,7 @@
         WHERE id = #{id};
     </delete>
 
-    <resultMap id="message_map" type="com.solvd.automation.lab.fall.domain.Message"
+    <resultMap id="message_map" type="com.solvd.automation.lab.fall.domain.message.Message"
                autoMapping="false">
         <id property="id" column="id"/>
         <result property="isDraft" column="isDraft"/>

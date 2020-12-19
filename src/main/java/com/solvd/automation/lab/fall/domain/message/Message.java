@@ -1,4 +1,6 @@
-package com.solvd.automation.lab.fall.domain;
+package com.solvd.automation.lab.fall.domain.message;
+
+import com.solvd.automation.lab.fall.domain.Entity;
 
 import java.util.Date;
 

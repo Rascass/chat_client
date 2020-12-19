@@ -1,17 +1,28 @@
 package com.solvd.automation.lab.fall.util;
 
+import com.solvd.automation.lab.fall.constant.PropertyConstant;
+import com.solvd.automation.lab.fall.domain.parser.Parser;
+import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
+import com.solvd.automation.lab.fall.io.PropertyReader;
+
 import java.io.*;
 import java.net.Socket;
-import java.util.Objects;
-import java.util.Scanner;
+
 
 public class Authorization implements Runnable {
 
+    private static Authorization instance = null;
     private Socket socket;
     private BufferedReader reader;
     private BufferedWriter writer;
+    private String login;
+    private int passHash;
 
-    public Authorization(String ip, int port) {
+    private Authorization() {
+
+        String ip = PropertyReader.getInstance().getValue(PropertyConstant.IP_KEY);
+        int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.PORT_KEY));
+
         try {
             socket = new Socket(ip, port);
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -21,20 +32,23 @@ public class Authorization implements Runnable {
         }
     }
 
+    public static Authorization createAuthorization() {
+        if (instance == null) {
+            instance = new Authorization();
+        }
+
+        return instance;
+    }
+
     @Override
     public void run() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your login and password\nLogin: ");
-        String login = scanner.nextLine();
-        System.out.print("Password: ");
-        int hashPass = Objects.hash(scanner.nextLine());
 
-        this.logIn(login, hashPass);
+        this.logIn();
         this.getResponse();
 
     }
 
-    private void logIn(String login, int passHash) {
+    private void logIn() {
         String message = "{\"login\":\"" + login + "\",\"password\":" + passHash + "}";
 
         try {
@@ -55,8 +69,26 @@ public class Authorization implements Runnable {
             }
         } catch (IOException ex) {
             ex.printStackTrace();
+        } catch (UnknownResponsePattern urp) {
+            urp.printStackTrace();
         }
-
     }
 
+    public void close(){
+        try {
+            reader.close();
+            writer.close();
+            socket.close();
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setPassHash(int passHash) {
+        this.passHash = passHash;
+    }
 }

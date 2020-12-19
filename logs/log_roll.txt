@@ -143,7 +143,7 @@
 2020:-12-16 00:42:27 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@6a62689d]
 2020:-12-16 00:42:27 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@6a62689d]
 2020:-12-16 00:42:27 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1784834205 to pool.
-2020:-12-16 00:44:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@102ca1dc
+2020:-12-16 00:44:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@102ca1dc
 2020:-12-16 00:44:00 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:44:00 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:44:00 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -166,7 +166,7 @@
 2020:-12-16 00:44:20 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@716a7124]
 2020:-12-16 00:44:20 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 00:44:20 [main] DEBUG message_mapper.findById - ==> Parameters: 2(Integer)
-2020:-12-16 00:47:05 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@469008ea
+2020:-12-16 00:47:05 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@469008ea
 2020:-12-16 00:47:05 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:47:05 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:47:05 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -180,7 +180,7 @@
 2020:-12-16 00:47:05 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:47:05 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:47:05 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1971152916 to pool.
-2020:-12-16 00:47:51 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@af26dbbe
+2020:-12-16 00:47:51 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@af26dbbe
 2020:-12-16 00:47:52 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:47:52 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:47:52 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -194,7 +194,7 @@
 2020:-12-16 00:47:52 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:47:52 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:47:52 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1971152916 to pool.
-2020:-12-16 00:49:02 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@25a0422e
+2020:-12-16 00:49:02 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@25a0422e
 2020:-12-16 00:49:02 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:49:02 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:49:02 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -208,7 +208,7 @@
 2020:-12-16 00:49:02 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:49:02 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@757d6814]
 2020:-12-16 00:49:02 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1971152916 to pool.
-2020:-12-16 00:49:43 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@3b8fbec8
+2020:-12-16 00:49:43 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@3b8fbec8
 2020:-12-16 00:49:43 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:49:43 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:49:43 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -241,8 +241,8 @@
 2020:-12-16 00:51:33 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 00:51:33 [main] DEBUG message_mapper.findById - ==> Parameters: 6(Integer)
 2020:-12-16 00:55:34 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding message with id: 6
-2020:-12-16 00:56:11 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@e4a2b7c6
-2020:-12-16 00:57:20 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@ccabcc01
+2020:-12-16 00:56:11 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@e4a2b7c6
+2020:-12-16 00:57:20 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@ccabcc01
 2020:-12-16 00:57:20 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 00:57:20 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 00:57:20 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -265,7 +265,7 @@
 2020:-12-16 00:57:32 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@7e809b79]
 2020:-12-16 00:57:32 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 00:57:32 [main] DEBUG message_mapper.findById - ==> Parameters: 6(Integer)
-2020:-12-16 01:04:05 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@55e1a64f
+2020:-12-16 01:04:05 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@55e1a64f
 2020:-12-16 01:04:05 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:04:05 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:04:05 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -315,7 +315,7 @@
 2020:-12-16 01:10:45 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@2cf92cc7]
 2020:-12-16 01:10:45 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 01:10:45 [main] DEBUG message_mapper.findById - ==> Parameters: 6(Integer)
-2020:-12-16 01:11:26 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@ec79ccd0
+2020:-12-16 01:11:26 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@ec79ccd0
 2020:-12-16 01:11:26 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:11:26 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:11:26 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -338,7 +338,7 @@
 2020:-12-16 01:11:30 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5cc126dc]
 2020:-12-16 01:11:30 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 01:11:30 [main] DEBUG message_mapper.findById - ==> Parameters: 6(Integer)
-2020:-12-16 01:14:53 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@ee4fab02
+2020:-12-16 01:14:53 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@ee4fab02
 2020:-12-16 01:14:53 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:14:54 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:14:54 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -374,8 +374,8 @@
 2020:-12-16 01:16:30 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5cc126dc]
 2020:-12-16 01:16:30 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5cc126dc]
 2020:-12-16 01:16:30 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1556162268 to pool.
-2020:-12-16 01:16:30 [main] INFO  automation.lab.fall.util.SqliteHandler - com.solvd.automation.lab.fall.domain.Message@ee4fab02
-2020:-12-16 01:18:53 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@a9af2dc0
+2020:-12-16 01:16:30 [main] INFO  automation.lab.fall.util.SqliteHandler - com.solvd.automation.lab.fall.domain.message.Message@ee4fab02
+2020:-12-16 01:18:53 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@a9af2dc0
 2020:-12-16 01:18:53 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:18:53 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:18:53 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -398,7 +398,7 @@
 2020:-12-16 01:19:05 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@5cc126dc]
 2020:-12-16 01:19:05 [main] DEBUG message_mapper.findById - ==>  Preparing: select isDraft, dispatchTime, content, clientFromId, clientToId from Messages where id =?;
 2020:-12-16 01:19:05 [main] DEBUG message_mapper.findById - ==> Parameters: 11(Integer)
-2020:-12-16 01:20:25 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@3a0f66ab
+2020:-12-16 01:20:25 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab
 2020:-12-16 01:20:25 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:20:25 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:20:25 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -425,8 +425,8 @@
 2020:-12-16 01:20:36 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:20:36 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:20:36 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 593447952 to pool.
-2020:-12-16 01:20:36 [main] INFO  automation.lab.fall.util.SqliteHandler - com.solvd.automation.lab.fall.domain.Message@3a0f66ab
-2020:-12-16 01:20:43 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.Message@5a8f066d
+2020:-12-16 01:20:36 [main] INFO  automation.lab.fall.util.SqliteHandler - com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab
+2020:-12-16 01:20:43 [main] INFO  automation.lab.fall.util.SqliteHandler - Creating message: com.solvd.automation.lab.fall.domain.message.Message@5a8f066d
 2020:-12-16 01:20:43 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:20:43 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 2020:-12-16 01:20:43 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -453,7 +453,7 @@
 2020:-12-16 01:20:49 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:20:49 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:20:49 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 593447952 to pool.
-2020:-12-16 01:20:49 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: [com.solvd.automation.lab.fall.domain.Message@3a0f66ab, com.solvd.automation.lab.fall.domain.Message@5a8f066d]
+2020:-12-16 01:20:49 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: [com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab, com.solvd.automation.lab.fall.domain.message.Message@5a8f066d]
 2020:-12-16 01:21:12 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding all records in messages
 2020:-12-16 01:21:13 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:21:13 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -467,7 +467,7 @@
 2020:-12-16 01:21:13 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:21:13 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@235f4c10]
 2020:-12-16 01:21:13 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 593447952 to pool.
-2020:-12-16 01:21:13 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: [com.solvd.automation.lab.fall.domain.Message@3a0f66ab, com.solvd.automation.lab.fall.domain.Message@5a8f066d]
+2020:-12-16 01:21:13 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: [com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab, com.solvd.automation.lab.fall.domain.message.Message@5a8f066d]
 2020:-12-16 01:22:59 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding all records in messages
 2020:-12-16 01:22:59 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:22:59 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -481,8 +481,8 @@
 2020:-12-16 01:23:00 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@7fcbe147]
 2020:-12-16 01:23:00 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@7fcbe147]
 2020:-12-16 01:23:00 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2144067911 to pool.
-2020:-12-16 01:23:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.Message@3a0f66ab
-2020:-12-16 01:23:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.Message@5a8f066d
+2020:-12-16 01:23:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab
+2020:-12-16 01:23:00 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.message.Message@5a8f066d
 2020:-12-16 01:23:36 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding all records in messages
 2020:-12-16 01:23:36 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:23:36 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -496,8 +496,8 @@
 2020:-12-16 01:23:37 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@743cb8e0]
 2020:-12-16 01:23:37 [main] DEBUG apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.sqlite.jdbc4.JDBC4Connection@743cb8e0]
 2020:-12-16 01:23:37 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1950136544 to pool.
-2020:-12-16 01:23:37 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.Message@3a0f66ab
-2020:-12-16 01:23:37 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.Message@5a8f066d
+2020:-12-16 01:23:37 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.message.Message@3a0f66ab
+2020:-12-16 01:23:37 [main] INFO  automation.lab.fall.util.SqliteHandler - Test messages list: com.solvd.automation.lab.fall.domain.message.Message@5a8f066d
 2020:-12-16 01:24:09 [main] INFO  automation.lab.fall.util.SqliteHandler - Finding all records in messages
 2020:-12-16 01:24:09 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 2020:-12-16 01:24:09 [main] DEBUG apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
