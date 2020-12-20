@@ -1,4 +1,4 @@
-package com.solvd.automation.lab.fall.domain.Gui;
+package com.solvd.automation.lab.fall.Gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,19 +11,22 @@ public class QuickMessageGui {
 
     public void go(String response) {
         frame = new JFrame();
+        frame.setLayout(new BorderLayout());
         JPanel panel = new JPanel();
-        BoxLayout boxLayout = new BoxLayout(panel,BoxLayout.Y_AXIS);
+        panel.setLayout(new BoxLayout(panel,BoxLayout.Y_AXIS));
 
         JLabel responseLabel = new JLabel(response);
+        responseLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JButton okButton = new JButton("Ok");
         okButton.addActionListener(new OkButtonListener());
+        okButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         panel.add(responseLabel,BorderLayout.CENTER);
         panel.add(okButton, BorderLayout.SOUTH);
 
-        frame.add(panel);
-        frame.setSize(250, 100);
+        frame.add(panel,BorderLayout.CENTER);
+        frame.setSize(350, 100);
         frame.setVisible(true);
     }
 

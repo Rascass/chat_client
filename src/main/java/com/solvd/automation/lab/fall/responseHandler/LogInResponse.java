@@ -1,9 +1,9 @@
-package com.solvd.automation.lab.fall.domain.responseHandler;
+package com.solvd.automation.lab.fall.responseHandler;
 
-import com.solvd.automation.lab.fall.domain.Gui.ClientGui;
-import com.solvd.automation.lab.fall.domain.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.domain.Gui.QuickMessageGui;
-import com.solvd.automation.lab.fall.domain.userServer.MyServer;
+import com.solvd.automation.lab.fall.Gui.ClientGui;
+import com.solvd.automation.lab.fall.Gui.MessengerGui;
+import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.userServer.MyServer;
 
 public class LogInResponse implements Runnable {
 
@@ -26,7 +26,7 @@ public class LogInResponse implements Runnable {
 
         if (code.equals("\"0\"")) {
 
-            ClientGui.resetFrameTo(new MessengerGui().getMessengerFrame());
+            ClientGui.resetFrameTo(new MessengerGui().createMessengerFrame());
 
             MyServer server = new MyServer();
             Thread serverThread = new Thread(server);
@@ -34,7 +34,7 @@ public class LogInResponse implements Runnable {
 
             quickMessageGui.go(description + ", with code: " + code);
 
-        } else if (code.equals("\"-1\"")) {
+        } else if (code.equals("\"1\"")) {
             quickMessageGui.go(description + ", with code: " + code);
         } else {
 

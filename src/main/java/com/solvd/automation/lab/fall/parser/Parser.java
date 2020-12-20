@@ -1,7 +1,7 @@
 package com.solvd.automation.lab.fall.parser;
 
-import com.solvd.automation.lab.fall.domain.responseHandler.ContactClientResponse;
-import com.solvd.automation.lab.fall.domain.responseHandler.LogInResponse;
+import com.solvd.automation.lab.fall.responseHandler.ContactClientResponse;
+import com.solvd.automation.lab.fall.responseHandler.LogInResponse;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,7 @@ public class Parser {
 
     public static void parse(String response) throws UnknownResponsePattern {
 
-        LOGGER.info("Parsing response: " + response);
+        System.out.println(response);
         List<String> fields = Parser.findMessageFields(response);
 
         if (isFieldsEqualTo(fields, Pattern.LOGIN_RESPONSE_PATTERN)) {

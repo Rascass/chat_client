@@ -1,4 +1,4 @@
-package com.solvd.automation.lab.fall.domain.Gui;
+package com.solvd.automation.lab.fall.Gui;
 
 import javax.swing.*;
 
@@ -8,7 +8,7 @@ public class ClientGui {
 
     public static void main(String[] args) {
 
-        appFrame = new AuthorizationGui().getAuthorizationFrame();
+        appFrame = new AuthorizationGui().createAuthorizationFrame();
     }
 
     public static void resetFrameTo(JFrame toFrame){

@@ -11,14 +11,13 @@ import java.net.Socket;
 
 public class ServerConnection implements Runnable {
 
-    private static ServerConnection instance = null;
     private Socket socket;
     private BufferedReader reader;
     private BufferedWriter writer;
     private String login;
     private int passHash;
 
-    private ServerConnection() {
+    public ServerConnection() {
 
         String ip = PropertyReader.getInstance().getValue(PropertyConstant.IP_KEY);
         int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.PORT_KEY));
@@ -32,22 +31,16 @@ public class ServerConnection implements Runnable {
         }
     }
 
-    public static ServerConnection getServerConnection() {
-        if (instance == null) {
-            instance = new ServerConnection();
-        }
-
-        return instance;
-    }
 
     @Override
     public void run() {
 
-        this.logIn();
-        this.serverResponseListener();
+
+            this.serverResponseListener();
+
     }
 
-    private void logIn() {
+    public void logIn() {
         String message = "{\"login\":\"" + login + "\",\"password\":" + passHash + "}";
 
         sendMessageToServer(message);

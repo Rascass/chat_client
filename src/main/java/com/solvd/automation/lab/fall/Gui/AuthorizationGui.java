@@ -1,4 +1,4 @@
-package com.solvd.automation.lab.fall.domain.Gui;
+package com.solvd.automation.lab.fall.Gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
 
@@ -15,12 +15,14 @@ public class AuthorizationGui {
     private JPasswordField userPassword;
     private JButton sendButton;
     private JButton registerButton;
-    private Thread ServerThread;
+    private Thread serverThread;
     private ServerConnection serverConnectionRunnable;
 
-    public JFrame getAuthorizationFrame() {
-        serverConnectionRunnable = ServerConnection.getServerConnection();
-        ServerThread = new Thread(serverConnectionRunnable);
+    public JFrame createAuthorizationFrame() {
+
+        serverConnectionRunnable = new ServerConnection();
+        serverThread = new Thread(serverConnectionRunnable);
+        serverThread.start();
 
         mainFrame = new JFrame();
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -58,10 +60,11 @@ public class AuthorizationGui {
         authorizationPanel.add(buttonBox);
 
         authorizationLayout.putConstraint(SpringLayout.NORTH, loginPanel, 10,
-                SpringLayout.NORTH,authorizationPanel);
-        authorizationLayout.putConstraint(SpringLayout.NORTH, buttonBox,80,
-                SpringLayout.NORTH,authorizationPanel);
+                SpringLayout.NORTH, authorizationPanel);
+        authorizationLayout.putConstraint(SpringLayout.NORTH, buttonBox, 80,
+                SpringLayout.NORTH, authorizationPanel);
 
+        mainFrame.setResizable(false);
         mainFrame.setSize(350, 160);
         mainFrame.setVisible(true);
 
@@ -72,12 +75,19 @@ public class AuthorizationGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            serverConnectionRunnable.setLogin(userLogin.getText());
+            if(!serverThread.isInterrupted()){
+                serverThread.interrupt();
+            }
+            serverConnectionRunnable = new ServerConnection();
+            serverThread = new Thread(serverConnectionRunnable);
 
+            serverConnectionRunnable.setLogin(userLogin.getText());
             int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
             serverConnectionRunnable.setPassHash(passHash);
 
-            ServerThread.start();
+            serverThread.start();
+
+            serverConnectionRunnable.logIn();
         }
     }
 }
