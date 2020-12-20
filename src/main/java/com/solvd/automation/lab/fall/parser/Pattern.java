@@ -1,8 +1,9 @@
 package com.solvd.automation.lab.fall.parser;
 
 public enum Pattern {
-    LOGIN_RESPONSE_PATTERN("code", "description"),
-    CONTACT_RESPONSE_PATTERN("code", "connection");
+    LOGIN_RESPONSE_PATTERN("code", "logInDescription"),
+    CONTACT_RESPONSE_PATTERN("code", "connection"),
+    REGISTRATION_RESPONSE_PATTERN("code","regDescription");
 
     private final String[] options;
 

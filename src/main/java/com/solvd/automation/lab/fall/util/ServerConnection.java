@@ -14,8 +14,6 @@ public class ServerConnection implements Runnable {
     private Socket socket;
     private BufferedReader reader;
     private BufferedWriter writer;
-    private String login;
-    private int passHash;
 
     public ServerConnection() {
 
@@ -34,13 +32,10 @@ public class ServerConnection implements Runnable {
 
     @Override
     public void run() {
-
-
-            this.serverResponseListener();
-
+        this.serverResponseListener();
     }
 
-    public void logIn() {
+    public void logIn(String login, String passHash) {
         String message = "{\"login\":\"" + login + "\",\"password\":" + passHash + "}";
 
         sendMessageToServer(message);
@@ -49,6 +44,13 @@ public class ServerConnection implements Runnable {
     public void findContact(String contactLogin) {
         String message = "{\"contactLogin\":\"" + contactLogin + "\"}";
 
+        sendMessageToServer(message);
+    }
+
+    public void register(String login, String passHash) {
+        String message = "{\"regLogin\":\"" + login + "\",\"regPassword\":" + passHash + "}";
+
+        System.out.println("message" + message);
         sendMessageToServer(message);
     }
 
@@ -84,13 +86,5 @@ public class ServerConnection implements Runnable {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public void setPassHash(int passHash) {
-        this.passHash = passHash;
     }
 }

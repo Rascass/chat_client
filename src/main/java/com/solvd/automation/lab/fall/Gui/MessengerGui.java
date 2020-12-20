@@ -57,7 +57,7 @@ public class MessengerGui {
         findClientPanel.add(contactLogin);
         findClientPanel.add(findButton);
 
-        chatPanel.setVisible(false);
+        chatPanel.setVisible(true);
         mainPanel.add(chatPanel, BorderLayout.CENTER);
         mainPanel.add(findClientPanel, BorderLayout.SOUTH);
 

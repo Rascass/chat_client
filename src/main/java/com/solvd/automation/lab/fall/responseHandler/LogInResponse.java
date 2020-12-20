@@ -11,6 +11,7 @@ public class LogInResponse implements Runnable {
     private String description;
 
     public LogInResponse(String response) {
+
         int codeFrom = response.indexOf(":") + 1;
         int codeTo = response.indexOf(",");
         code = response.substring(codeFrom, codeTo);
@@ -24,20 +25,26 @@ public class LogInResponse implements Runnable {
     public void run() {
         QuickMessageGui quickMessageGui = new QuickMessageGui();
 
-        if (code.equals("\"0\"")) {
 
-            ClientGui.resetFrameTo(new MessengerGui().createMessengerFrame());
+        switch (code) {
+            case ("\"0\""):
+                ClientGui.resetFrameTo(new MessengerGui().createMessengerFrame());
 
-            MyServer server = new MyServer();
-            Thread serverThread = new Thread(server);
-            serverThread.start();
+                MyServer server = new MyServer();
+                Thread serverThread = new Thread(server);
+                serverThread.start();
 
-            quickMessageGui.go(description + ", with code: " + code);
+                quickMessageGui.go(description + ", with code: " + code);
+                break;
 
-        } else if (code.equals("\"1\"")) {
-            quickMessageGui.go(description + ", with code: " + code);
-        } else {
-
+            case ("\"1\""):
+            case ("\"2\""):
+                quickMessageGui.go(description + ", with code: " + code);
+                break;
+            default:
+                quickMessageGui.go("wrong code from server");
+                break;
         }
+
     }
 }

@@ -3,6 +3,7 @@ package com.solvd.automation.lab.fall.parser;
 import com.solvd.automation.lab.fall.responseHandler.ContactClientResponse;
 import com.solvd.automation.lab.fall.responseHandler.LogInResponse;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
+import com.solvd.automation.lab.fall.responseHandler.RegistrationResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +12,6 @@ import java.util.List;
 
 
 public class Parser {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Parser.class);
 
     public static void parse(String response) throws UnknownResponsePattern {
 
@@ -21,16 +21,21 @@ public class Parser {
         if (isFieldsEqualTo(fields, Pattern.LOGIN_RESPONSE_PATTERN)) {
 
             LogInResponse logInResponse = new LogInResponse(response);
-
             Thread thread = new Thread(logInResponse);
             thread.start();
 
         } else if (isFieldsEqualTo(fields, Pattern.CONTACT_RESPONSE_PATTERN)) {
 
             ContactClientResponse contactClientResponse = new ContactClientResponse(response);
-
             Thread thread = new Thread(contactClientResponse);
             thread.start();
+
+        } else if(isFieldsEqualTo(fields, Pattern.REGISTRATION_RESPONSE_PATTERN)){
+
+            RegistrationResponse registrationResponse = new RegistrationResponse(response);
+            Thread thread = new Thread(registrationResponse);
+            thread.start();
+
         } else {
             throw new UnknownResponsePattern("Can't determine response pattern");
         }
@@ -67,7 +72,6 @@ public class Parser {
         } else {
             return false;
         }
-
         return true;
     }
 

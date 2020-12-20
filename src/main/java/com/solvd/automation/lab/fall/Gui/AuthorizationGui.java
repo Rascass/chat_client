@@ -24,7 +24,7 @@ public class AuthorizationGui {
         serverThread = new Thread(serverConnectionRunnable);
         serverThread.start();
 
-        mainFrame = new JFrame();
+        mainFrame = new JFrame("Authorization");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         authorizationPanel = new JPanel();
@@ -49,11 +49,12 @@ public class AuthorizationGui {
         loginPanel.add(passwordLabel);
         loginPanel.add(userPassword);
 
-        sendButton = new JButton("log in");
+        sendButton = new JButton("Log in");
         sendButton.addActionListener(new SendButtonActionListener());
         buttonBox.add(sendButton);
 
-        registerButton = new JButton("register");
+        registerButton = new JButton("Register");
+        registerButton.addActionListener(new RegisterButtonListener());
         buttonBox.add(registerButton);
 
         authorizationPanel.add(loginPanel);
@@ -75,19 +76,25 @@ public class AuthorizationGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(!serverThread.isInterrupted()){
+            if (!serverThread.isInterrupted()) {
                 serverThread.interrupt();
             }
             serverConnectionRunnable = new ServerConnection();
             serverThread = new Thread(serverConnectionRunnable);
-
-            serverConnectionRunnable.setLogin(userLogin.getText());
-            int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
-            serverConnectionRunnable.setPassHash(passHash);
-
             serverThread.start();
 
-            serverConnectionRunnable.logIn();
+            String login = userLogin.getText();
+            int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
+
+            serverConnectionRunnable.logIn(login, String.valueOf(passHash));
+        }
+    }
+
+    public class RegisterButtonListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            ClientGui.resetFrameTo(new RegisterGui().createRegistrationFrame());
         }
     }
 }
