@@ -1,6 +1,8 @@
 package com.solvd.automation.lab.fall.Gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,16 +15,15 @@ public class AuthorizationGui {
     private JPanel authorizationPanel;
     private JTextField userLogin;
     private JPasswordField userPassword;
-    private JButton sendButton;
+    private JButton logInButton;
     private JButton registerButton;
-    private Thread serverThread;
-    private ServerConnection serverConnectionRunnable;
+    private ServerConnection serverConnection;
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public JFrame createAuthorizationFrame() {
 
-        serverConnectionRunnable = new ServerConnection();
-        serverThread = new Thread(serverConnectionRunnable);
-        serverThread.start();
+        serverConnection = ServerConnection.getInstance();
 
         mainFrame = new JFrame("Authorization");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,9 +50,9 @@ public class AuthorizationGui {
         loginPanel.add(passwordLabel);
         loginPanel.add(userPassword);
 
-        sendButton = new JButton("Log in");
-        sendButton.addActionListener(new SendButtonActionListener());
-        buttonBox.add(sendButton);
+        logInButton = new JButton("Log in");
+        logInButton.addActionListener(new LoginButtonActionListener());
+        buttonBox.add(logInButton);
 
         registerButton = new JButton("Register");
         registerButton.addActionListener(new RegisterButtonListener());
@@ -72,21 +73,15 @@ public class AuthorizationGui {
         return mainFrame;
     }
 
-    public class SendButtonActionListener implements ActionListener {
+    public class LoginButtonActionListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (!serverThread.isInterrupted()) {
-                serverThread.interrupt();
-            }
-            serverConnectionRunnable = new ServerConnection();
-            serverThread = new Thread(serverConnectionRunnable);
-            serverThread.start();
 
             String login = userLogin.getText();
             int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
-
-            serverConnectionRunnable.logIn(login, String.valueOf(passHash));
+            LOGGER.debug("Log in pressed");
+            serverConnection.logIn(login, String.valueOf(passHash));
         }
     }
 

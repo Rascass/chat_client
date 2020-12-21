@@ -16,10 +16,10 @@ public class UserConnection implements Runnable {
     private BufferedWriter writer;
     private JTextArea incoming;
 
-    public UserConnection(String ip) {
-        int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.USER_PORT_KEY));
+    public UserConnection(String ip, String port) {
+        int portInt = Integer.parseInt(port);
         try {
-           //socket = new Socket(ip, port);
+            socket = new Socket(ip, portInt);
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 

@@ -82,15 +82,13 @@ public class MessengerGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            ServerConnection connection = new ServerConnection();
-            Thread thread = new Thread(connection);
-            thread.start();
+            ServerConnection connection = ServerConnection.getInstance();
 
             connection.findContact(contactLogin.getText());
         }
     }
 
-    public void setUpConnection(UserConnection userConnection){
+    public void setUpConnection(UserConnection userConnection) {
         chatPanel.setVisible(true);
         this.userConnection = userConnection;
     }

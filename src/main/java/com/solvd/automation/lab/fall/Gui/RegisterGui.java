@@ -83,9 +83,7 @@ public class RegisterGui {
             if (pass1 == pass2) {
 
                 String login = userLogin.getText();
-                ServerConnection connection = new ServerConnection();
-                Thread registerThread = new Thread(connection);
-                registerThread.start();
+                ServerConnection connection = ServerConnection.getInstance();
 
                 connection.register(login, String.valueOf(pass1));
 

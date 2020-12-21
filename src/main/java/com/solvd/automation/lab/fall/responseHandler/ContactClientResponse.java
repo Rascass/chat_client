@@ -29,9 +29,13 @@ public class ContactClientResponse implements Runnable {
 
         switch (code) {
             case ("\"0\""):
-                String ip = connection.substring(0,connection.indexOf(":"));
+                String ip = connection.substring(0, connection.indexOf(":"));
+                String port = connection.substring(connection.indexOf(":") + 1);
+
                 System.out.println(ip);
-                UserConnection userConnection = new UserConnection(ip);
+                System.out.println(port);
+
+                UserConnection userConnection = new UserConnection(ip, port);
 
                 messengerGui = new MessengerGui();
                 messengerGui.setUpConnection(userConnection);
