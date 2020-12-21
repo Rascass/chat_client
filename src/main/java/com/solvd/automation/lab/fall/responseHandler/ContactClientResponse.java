@@ -10,6 +10,7 @@ public class ContactClientResponse implements Runnable {
 
     private String code;
     private String connection;
+    private String port;
     MessengerGui messengerGui;
 
     public ContactClientResponse(String response) {
@@ -28,7 +29,9 @@ public class ContactClientResponse implements Runnable {
 
         switch (code) {
             case ("\"0\""):
-                UserConnection userConnection = new UserConnection(connection);
+                String ip = connection.substring(0,connection.indexOf(":"));
+                System.out.println(ip);
+                UserConnection userConnection = new UserConnection(ip);
 
                 messengerGui = new MessengerGui();
                 messengerGui.setUpConnection(userConnection);

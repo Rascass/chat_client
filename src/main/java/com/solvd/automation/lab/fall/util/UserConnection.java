@@ -19,7 +19,7 @@ public class UserConnection implements Runnable {
     public UserConnection(String ip) {
         int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.USER_PORT_KEY));
         try {
-            socket = new Socket(ip, port);
+           //socket = new Socket(ip, port);
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 

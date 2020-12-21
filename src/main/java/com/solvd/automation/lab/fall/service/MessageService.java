@@ -11,7 +11,7 @@ import java.util.List;
 public class MessageService extends BaseService{
     private static final Logger LOGGER = LoggerFactory.getLogger(MessageService.class);
 
-    MessageDao messageDao = MESSAGE_DAOS.get(PROPERTY_READER.getValue(PropertyConstant.ENV_KEY));
+    private MessageDao messageDao = MESSAGE_DAOS.get(PROPERTY_READER.getValue(PropertyConstant.ENV_KEY));
 
     public Message create(Message message) {
         LOGGER.info("Creating message: " + message);
