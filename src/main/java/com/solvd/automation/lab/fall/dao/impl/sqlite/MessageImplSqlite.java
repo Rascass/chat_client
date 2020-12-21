@@ -2,7 +2,7 @@ package com.solvd.automation.lab.fall.dao.impl.sqlite;
 
 import com.solvd.automation.lab.fall.config.SessionFactory;
 import com.solvd.automation.lab.fall.dao.MessageDao;
-import com.solvd.automation.lab.fall.domain.Message;
+import com.solvd.automation.lab.fall.domain.message.Message;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
