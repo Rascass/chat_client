@@ -1,9 +1,8 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
 
-import com.solvd.automation.lab.fall.Gui.ClientGui;
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.gui.MessengerGui;
+import com.solvd.automation.lab.fall.gui.QuickMessageGui;
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.io.PropertyReader;
 import com.solvd.automation.lab.fall.util.UserConnection;
@@ -41,13 +40,10 @@ public class ContactClientResponse implements Runnable {
 
                 LOGGER.info("find client IP: " + ip);
                 LOGGER.info("find client Port: " + port);
+                UserConnection userConnection = new UserConnection(ip, port);
 
                 messengerGui = new MessengerGui();
-                messengerGui.createMessengerFrame("Connection to other's peer");
-
-                UserConnection userConnection = new UserConnection(ip, port, messengerGui.getIncoming());
-                messengerGui.setUpConnection(userConnection);
-
+                messengerGui.createMessengerFrame("Connection to other's peer", userConnection);
 
                 break;
             case ("\"1\""):

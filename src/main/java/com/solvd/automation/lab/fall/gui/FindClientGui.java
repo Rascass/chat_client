@@ -1,4 +1,4 @@
-package com.solvd.automation.lab.fall.Gui;
+package com.solvd.automation.lab.fall.gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
 

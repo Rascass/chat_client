@@ -1,9 +1,8 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
-import com.solvd.automation.lab.fall.Gui.ClientGui;
-import com.solvd.automation.lab.fall.Gui.FindClientGui;
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.gui.ClientGui;
+import com.solvd.automation.lab.fall.gui.FindClientGui;
+import com.solvd.automation.lab.fall.gui.QuickMessageGui;
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.io.PropertyReader;
 import com.solvd.automation.lab.fall.userServer.MyServer;

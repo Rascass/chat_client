@@ -1,6 +1,5 @@
-package com.solvd.automation.lab.fall.Gui;
+package com.solvd.automation.lab.fall.gui;
 
-import com.solvd.automation.lab.fall.util.ServerConnection;
 import com.solvd.automation.lab.fall.util.UserConnection;
 
 import javax.swing.*;
@@ -16,7 +15,12 @@ public class MessengerGui {
     private JPanel chatPanel = new JPanel();
     private UserConnection userConnection;
 
-    public JFrame createMessengerFrame(String name) {
+    public JFrame createMessengerFrame(String name, UserConnection connection) {
+
+        this.userConnection = connection;
+        Thread thread = new Thread(userConnection);
+        thread.start();
+
         frame = new JFrame(name);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new BorderLayout());
@@ -33,6 +37,7 @@ public class MessengerGui {
         JScrollPane incomingScroll = new JScrollPane(incoming);
         incomingScroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         incomingScroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        userConnection.setIncoming(incoming);
 
         outgoing = new JTextField(20);
 
@@ -64,19 +69,5 @@ public class MessengerGui {
         }
     }
 
-    public JTextArea getIncoming() {
-        return incoming;
-    }
-
-
-    public void setUpConnection(UserConnection userConnection) {
-        chatPanel.setVisible(true);
-
-        this.userConnection = userConnection;
-        //userConnection.setIncoming(incoming);
-
-        Thread thread = new Thread(userConnection);
-        thread.start();
-    }
 
 }

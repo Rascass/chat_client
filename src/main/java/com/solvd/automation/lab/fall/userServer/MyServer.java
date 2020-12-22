@@ -1,24 +1,22 @@
 package com.solvd.automation.lab.fall.userServer;
 
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
+import com.solvd.automation.lab.fall.gui.MessengerGui;
 import com.solvd.automation.lab.fall.util.UserConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.swing.*;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MyServer implements Runnable {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private List<BufferedWriter> userOutputStreams;
+    private Set<ConnectionHandler> connections;
     private int port;
-    private JFrame serverFrame;
+    private MessengerGui messengerGui;
     private final String ip = "127.0.0.1";
 
     public MyServer(int port) {
@@ -27,29 +25,23 @@ public class MyServer implements Runnable {
 
     public void run() {
 
-        userOutputStreams = new ArrayList<>();
+        connections = new HashSet<>();
 
         try {
-            MessengerGui messengerGui = new MessengerGui();
-            serverFrame = messengerGui.createMessengerFrame("Connection to my own server");
-
-            LOGGER.info("Creating a connection to your own server with port: " + port);
-            UserConnection selfConnectionServer = new UserConnection(ip, port, messengerGui.getIncoming());
-            messengerGui.setUpConnection(selfConnectionServer);
+            this.createSelfConnection();
 
             ServerSocket serverSocket = new ServerSocket(port);
 
             while (true) {
                 Socket userSocket = serverSocket.accept();
 
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(userSocket.getOutputStream()));
+                ConnectionHandler connection = new ConnectionHandler(userSocket);
+                connections.add(connection);
 
-                userOutputStreams.add(out);
-
-                Thread client = new Thread(new UserHandler(userSocket));
+                Thread client = new Thread(connection);
                 client.start();
 
-                LOGGER.info("Got a connection");
+                LOGGER.info("Got a new connection");
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -57,26 +49,35 @@ public class MyServer implements Runnable {
 
     }
 
+    private void createSelfConnection() {
+        LOGGER.info("Creating a connection to your own server with port: " + port);
+        UserConnection selfConnection = new UserConnection(ip, port);
+
+        messengerGui = new MessengerGui();
+        messengerGui.createMessengerFrame("My hub", selfConnection);
+    }
+
     public void sendEveryOne(String message) {
-        for (BufferedWriter writer : userOutputStreams) {
-            try {
-                writer.write(message);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+
+        Iterator<ConnectionHandler> iterator = connections.iterator();
+        while (iterator.hasNext()) {
+
+            ConnectionHandler connectionHandler = iterator.next();
+            connectionHandler.writer(message);
         }
     }
 
 
-    public class UserHandler implements Runnable {
+    public class ConnectionHandler implements Runnable {
         private BufferedReader in;
-        private Socket userSocket;
+        private BufferedWriter out;
 
-        public UserHandler(Socket socket) {
+        public ConnectionHandler(Socket socket) {
             try {
-                this.userSocket = socket;
 
-                in = new BufferedReader(new InputStreamReader(userSocket.getInputStream()));
+                out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -90,8 +91,19 @@ public class MyServer implements Runnable {
             try {
                 while ((tmp = in.readLine()) != null) {
                     message = tmp;
+                    LOGGER.info("Read message: " + message);
                     sendEveryOne(message);
                 }
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        public void writer(String message) {
+            try {
+                out.write(message);
+                out.newLine();
+                out.flush();
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
