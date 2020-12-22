@@ -16,8 +16,8 @@ public class MessengerGui {
     private JPanel chatPanel = new JPanel();
     private UserConnection userConnection;
 
-    public JFrame createMessengerFrame() {
-        frame = new JFrame();
+    public JFrame createMessengerFrame(String name) {
+        frame = new JFrame(name);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new BorderLayout());
 
@@ -64,10 +64,19 @@ public class MessengerGui {
         }
     }
 
+    public JTextArea getIncoming() {
+        return incoming;
+    }
+
+
     public void setUpConnection(UserConnection userConnection) {
         chatPanel.setVisible(true);
+
         this.userConnection = userConnection;
-        userConnection.setIncoming(incoming);
+        //userConnection.setIncoming(incoming);
+
+        Thread thread = new Thread(userConnection);
+        thread.start();
     }
 
 }

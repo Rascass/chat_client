@@ -39,14 +39,14 @@ public class ContactClientResponse implements Runnable {
                 int port = Integer.parseInt(connection.substring(connection.indexOf(":") + 1))
                         + Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.MAGIC_NUMBER));
 
-                LOGGER.info("IP: " + ip);
-                LOGGER.info("Port: " + port);
-
-                UserConnection userConnection = new UserConnection(ip, port);
+                LOGGER.info("find client IP: " + ip);
+                LOGGER.info("find client Port: " + port);
 
                 messengerGui = new MessengerGui();
+                messengerGui.createMessengerFrame("Connection to other's peer");
+
+                UserConnection userConnection = new UserConnection(ip, port, messengerGui.getIncoming());
                 messengerGui.setUpConnection(userConnection);
-                messengerGui.createMessengerFrame();
 
 
                 break;

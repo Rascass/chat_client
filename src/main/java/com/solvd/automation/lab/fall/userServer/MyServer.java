@@ -31,17 +31,17 @@ public class MyServer implements Runnable {
 
         try {
             MessengerGui messengerGui = new MessengerGui();
-            serverFrame = messengerGui.createMessengerFrame();
-            serverFrame.setVisible(false);
+            serverFrame = messengerGui.createMessengerFrame("Connection to my own server");
 
             LOGGER.info("Creating a connection to your own server with port: " + port);
-            UserConnection selfConnectionServer= new UserConnection(ip, port);
+            UserConnection selfConnectionServer = new UserConnection(ip, port, messengerGui.getIncoming());
             messengerGui.setUpConnection(selfConnectionServer);
 
             ServerSocket serverSocket = new ServerSocket(port);
+
             while (true) {
                 Socket userSocket = serverSocket.accept();
-                serverFrame.setVisible(true);
+
                 BufferedWriter out = new BufferedWriter(new OutputStreamWriter(userSocket.getOutputStream()));
 
                 userOutputStreams.add(out);
