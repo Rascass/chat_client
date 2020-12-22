@@ -1,11 +1,19 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
 import com.solvd.automation.lab.fall.Gui.ClientGui;
+import com.solvd.automation.lab.fall.Gui.FindClientGui;
 import com.solvd.automation.lab.fall.Gui.MessengerGui;
 import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.constant.PropertyConstant;
+import com.solvd.automation.lab.fall.io.PropertyReader;
 import com.solvd.automation.lab.fall.userServer.MyServer;
+import com.solvd.automation.lab.fall.util.ServerConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class LogInResponse implements Runnable {
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private String code;
     private String description;
@@ -23,16 +31,28 @@ public class LogInResponse implements Runnable {
 
     @Override
     public void run() {
-        QuickMessageGui quickMessageGui = new QuickMessageGui();
 
+        QuickMessageGui quickMessageGui = new QuickMessageGui();
 
         switch (code) {
             case ("\"0\""):
-                ClientGui.resetFrameTo(new MessengerGui().createMessengerFrame());
 
-                MyServer server = new MyServer();
+                FindClientGui findClientGui = FindClientGui.getFindClientGui();
+                ServerConnection connection = ServerConnection.getInstance();
+
+                ClientGui.resetFrameTo(findClientGui.getFrame());
+
+                int port = connection.getYourOwnPort() +
+                        Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.MAGIC_NUMBER));
+
+                MyServer server = new MyServer(port);
                 Thread serverThread = new Thread(server);
                 serverThread.start();
+
+
+                LOGGER.info("Port in use: " + connection.getYourOwnPort());
+                LOGGER.info("Creating client's own server with port: " + port);
+
 
                 quickMessageGui.go(description + ", with code: " + code);
                 break;

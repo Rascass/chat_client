@@ -3,13 +3,14 @@ package com.solvd.automation.lab.fall.service;
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.dao.MessageDao;
 import com.solvd.automation.lab.fall.domain.message.Message;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.util.List;
 
 public class MessageService extends BaseService{
-    private static final Logger LOGGER = LoggerFactory.getLogger(MessageService.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private MessageDao messageDao = MESSAGE_DAOS.get(PROPERTY_READER.getValue(PropertyConstant.ENV_KEY));
 

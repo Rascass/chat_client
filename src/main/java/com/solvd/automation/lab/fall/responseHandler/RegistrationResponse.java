@@ -6,6 +6,7 @@ import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
 
 
 public class RegistrationResponse implements Runnable {
+
     private String code;
     private String regDescription;
 

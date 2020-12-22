@@ -1,7 +1,7 @@
 package com.solvd.automation.lab.fall.util;
 
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.parser.Parser;
+import com.solvd.automation.lab.fall.parser.MyParser;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
 import com.solvd.automation.lab.fall.io.PropertyReader;
 import org.apache.logging.log4j.LogManager;
@@ -36,6 +36,8 @@ public class ServerConnection {
             socket = new Socket(ip, port);
             writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             this.createServerResponseListener();
+
+            LOGGER.info("Clients address: " + socket.getLocalPort());
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -73,6 +75,10 @@ public class ServerConnection {
         }
     }
 
+    public int getYourOwnPort(){
+        return socket.getLocalPort();
+    }
+
     public class ServerResponseListener implements Runnable {
 
         @Override
@@ -80,7 +86,7 @@ public class ServerConnection {
             String response;
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));) {
                 while (((response = reader.readLine()) != null)) {
-                    Parser.parse(response);
+                    MyParser.parse(response);
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();

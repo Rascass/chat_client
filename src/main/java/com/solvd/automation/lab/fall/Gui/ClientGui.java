@@ -1,17 +1,19 @@
 package com.solvd.automation.lab.fall.Gui;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 
 public class ClientGui {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ClientGui.class);
+    private static final Logger LOGGER = LogManager.getLogger();
     private static JFrame appFrame;
 
     public static void main(String[] args) {
-
+        LOGGER.info("Starting client");
         appFrame = new AuthorizationGui().createAuthorizationFrame();
     }
 

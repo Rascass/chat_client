@@ -4,14 +4,20 @@ package com.solvd.automation.lab.fall.responseHandler;
 import com.solvd.automation.lab.fall.Gui.ClientGui;
 import com.solvd.automation.lab.fall.Gui.MessengerGui;
 import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.constant.PropertyConstant;
+import com.solvd.automation.lab.fall.io.PropertyReader;
 import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ContactClientResponse implements Runnable {
 
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private String code;
     private String connection;
-    private String port;
-    MessengerGui messengerGui;
+
+    private MessengerGui messengerGui;
 
     public ContactClientResponse(String response) {
         int codeFrom = response.indexOf(":") + 1;
@@ -30,16 +36,18 @@ public class ContactClientResponse implements Runnable {
         switch (code) {
             case ("\"0\""):
                 String ip = connection.substring(0, connection.indexOf(":"));
-                String port = connection.substring(connection.indexOf(":") + 1);
+                int port = Integer.parseInt(connection.substring(connection.indexOf(":") + 1))
+                        + Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.MAGIC_NUMBER));
 
-                System.out.println(ip);
-                System.out.println(port);
+                LOGGER.info("IP: " + ip);
+                LOGGER.info("Port: " + port);
 
                 UserConnection userConnection = new UserConnection(ip, port);
 
                 messengerGui = new MessengerGui();
                 messengerGui.setUpConnection(userConnection);
-                ClientGui.resetFrameTo(messengerGui.createMessengerFrame());
+                messengerGui.createMessengerFrame();
+
 
                 break;
             case ("\"1\""):

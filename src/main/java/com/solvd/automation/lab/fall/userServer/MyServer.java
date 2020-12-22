@@ -1,9 +1,11 @@
 package com.solvd.automation.lab.fall.userServer;
 
 import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.io.PropertyReader;
+import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import javax.swing.*;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,24 +14,42 @@ import java.util.List;
 
 public class MyServer implements Runnable {
 
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private List<BufferedWriter> userOutputStreams;
+    private int port;
+    private JFrame serverFrame;
+    private final String ip = "127.0.0.1";
+
+    public MyServer(int port) {
+        this.port = port;
+    }
 
     public void run() {
 
-        int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.USER_PORT_KEY));
         userOutputStreams = new ArrayList<>();
 
         try {
-            ServerSocket serverSocket = new ServerSocket(8002);
+            MessengerGui messengerGui = new MessengerGui();
+            serverFrame = messengerGui.createMessengerFrame();
+            serverFrame.setVisible(false);
+
+            LOGGER.info("Creating a connection to your own server with port: " + port);
+            UserConnection selfConnectionServer= new UserConnection(ip, port);
+            messengerGui.setUpConnection(selfConnectionServer);
+
+            ServerSocket serverSocket = new ServerSocket(port);
             while (true) {
                 Socket userSocket = serverSocket.accept();
+                serverFrame.setVisible(true);
                 BufferedWriter out = new BufferedWriter(new OutputStreamWriter(userSocket.getOutputStream()));
+
                 userOutputStreams.add(out);
 
                 Thread client = new Thread(new UserHandler(userSocket));
                 client.start();
 
-                System.out.println("Got a connection");
+                LOGGER.info("Got a connection");
             }
         } catch (IOException ex) {
             ex.printStackTrace();

@@ -1,10 +1,5 @@
 package com.solvd.automation.lab.fall.util;
 
-import com.solvd.automation.lab.fall.Gui.ClientGui;
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.io.PropertyReader;
-
 import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
@@ -16,10 +11,9 @@ public class UserConnection implements Runnable {
     private BufferedWriter writer;
     private JTextArea incoming;
 
-    public UserConnection(String ip, String port) {
-        int portInt = Integer.parseInt(port);
+    public UserConnection(String ip, int port) {
         try {
-            socket = new Socket(ip, portInt);
+            socket = new Socket(ip, port);
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 

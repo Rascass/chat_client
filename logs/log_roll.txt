@@ -38,3 +38,285 @@
 2020:-12-21 23:56:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Ddsdas","password":-994707545}
 2020:-12-21 23:56:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Ddsdas","password":-994707545}
 2020:-12-21 23:56:37 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Ddsdas","password":-994707545}
+2020:-12-22 00:30:13 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 00:32:11 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 00:32:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 00:35:32 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 00:39:41 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 00:39:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dd","password":1941064799}
+2020:-12-22 00:40:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dd","password":1941064799}
+2020:-12-22 01:14:23 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 01:14:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2125119}
+2020:-12-22 01:16:03 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 01:16:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"dddd","password":99331}
+2020:-12-22 01:18:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Dasha","regPassword":65803022}
+2020:-12-22 01:18:40 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dasha","password":65803022}
+2020:-12-22 01:38:51 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 01:38:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"dDd","password":-1336177686}
+2020:-12-22 01:40:05 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 01:40:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dsada","password":109745106}
+2020:-12-22 01:50:14 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 01:50:21 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Dima","regPassword":2130200}
+2020:-12-22 01:50:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:35:18 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:35:31 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Anna","regPassword":2045663}
+2020:-12-22 02:35:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:38:40 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 02:43:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"aEnter your friend's login"}
+2020:-12-22 02:44:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 02:44:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 02:44:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 02:44:46 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:44:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 02:45:03 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:45:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":-806358739}
+2020:-12-22 02:45:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Annssa","password":-806358739}
+2020:-12-22 02:45:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Anna","regPassword":1599}
+2020:-12-22 02:45:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":3231}
+2020:-12-22 02:45:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:45:52 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Enter your friend's login"}
+2020:-12-22 02:46:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Enter your friend's login"}
+2020:-12-22 02:47:53 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:47:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:48:40 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:48:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:49:10 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Danila"}
+2020:-12-22 02:51:17 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 02:51:22 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 02:51:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Danila"}
+2020:-12-22 03:02:29 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:02:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 03:02:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Ivan"}
+2020:-12-22 03:08:53 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:08:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 03:09:05 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dsha"}
+2020:-12-22 03:09:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dusha"}
+2020:-12-22 03:09:21 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 03:11:44 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:11:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 03:21:15 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 03:41:15 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:41:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"dims","password":31}
+2020:-12-22 03:41:24 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"dims","password":3711}
+2020:-12-22 03:42:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dsadas","password":3540191}
+2020:-12-22 03:42:21 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:42:37 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:43:08 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:43:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Ddsad","password":114226}
+2020:-12-22 03:43:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Ddsad","password":31}
+2020:-12-22 03:43:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"","password":31}
+2020:-12-22 03:43:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":99331}
+2020:-12-22 03:43:58 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:44:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":3078431}
+2020:-12-22 03:44:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Dima","regPassword":2130200}
+2020:-12-22 03:44:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - register message{"regLogin":"Lena","regPassword":2364715}
+2020:-12-22 03:44:37 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Lena","password":2364715}
+2020:-12-22 03:44:47 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"DIna"}
+2020:-12-22 03:44:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 03:49:44 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:49:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 03:49:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Elena"}
+2020:-12-22 03:50:18 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 03:58:42 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 03:58:51 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:10:32 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:10:32 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: /127.0.0.1
+2020:-12-22 04:11:26 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:11:26 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: /127.0.0.1:8001
+2020:-12-22 04:11:39 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:11:39 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 8001
+2020:-12-22 04:11:52 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:11:52 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57607
+2020:-12-22 04:12:09 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:12:09 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57616
+2020:-12-22 04:12:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:12:28 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:13:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 04:13:02 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:13:02 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 57607
+2020:-12-22 04:13:16 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 04:13:16 [Thread-4] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:13:16 [Thread-4] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 57607
+2020:-12-22 04:13:28 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 04:13:28 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:13:28 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 57616
+2020:-12-22 04:18:20 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:18:20 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57654
+2020:-12-22 04:19:56 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:19:56 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57662
+2020:-12-22 04:20:06 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:20:06 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57669
+2020:-12-22 04:20:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:20:36 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating clients own server with port: 57662
+2020:-12-22 04:20:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:20:43 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating clients own server with port: 57669
+2020:-12-22 04:22:40 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:22:40 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57691
+2020:-12-22 04:22:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:22:46 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating clients own server with port: 57691
+2020:-12-22 04:26:45 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:26:45 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57732
+2020:-12-22 04:27:35 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:27:35 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57741
+2020:-12-22 04:27:40 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:27:40 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 57741
+2020:-12-22 04:27:40 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 57852
+2020:-12-22 04:27:50 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:27:50 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57748
+2020:-12-22 04:27:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:27:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 57748
+2020:-12-22 04:27:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 57859
+2020:-12-22 04:28:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 04:28:08 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:28:08 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 57741
+2020:-12-22 04:35:13 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:35:13 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57826
+2020:-12-22 04:35:24 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:35:24 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 57833
+2020:-12-22 04:35:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:35:35 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 57833
+2020:-12-22 04:35:35 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 57944
+2020:-12-22 04:35:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:35:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 57826
+2020:-12-22 04:35:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 57937
+2020:-12-22 04:35:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 04:35:57 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:35:57 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 57826
+2020:-12-22 04:39:50 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:39:50 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52812
+2020:-12-22 04:39:55 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:39:55 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52819
+2020:-12-22 04:40:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:40:03 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52812
+2020:-12-22 04:40:03 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 52923
+2020:-12-22 04:40:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:40:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52819
+2020:-12-22 04:40:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 52930
+2020:-12-22 04:41:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-22 04:41:12 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:41:12 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 52812
+2020:-12-22 04:42:44 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:42:44 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52852
+2020:-12-22 04:42:50 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:42:50 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52858
+2020:-12-22 04:42:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:42:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52852
+2020:-12-22 04:42:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 52963
+2020:-12-22 04:43:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:43:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52858
+2020:-12-22 04:43:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 52969
+2020:-12-22 04:43:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 04:43:36 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:43:36 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 52858
+2020:-12-22 04:47:53 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:48:07 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:48:07 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52899
+2020:-12-22 04:48:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 04:48:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52899
+2020:-12-22 04:48:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53010
+2020:-12-22 04:48:18 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 04:48:18 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 52906
+2020:-12-22 04:48:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 04:48:23 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 52906
+2020:-12-22 04:48:23 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53017
+2020:-12-22 04:48:31 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 04:48:31 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 04:48:31 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53017
+2020:-12-22 05:28:03 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:28:03 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53146
+2020:-12-22 05:28:11 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:28:11 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53152
+2020:-12-22 05:28:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:28:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53146
+2020:-12-22 05:28:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53257
+2020:-12-22 05:28:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:28:26 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53152
+2020:-12-22 05:28:26 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53263
+2020:-12-22 05:28:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:28:39 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:28:39 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53263
+2020:-12-22 05:28:39 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 05:29:42 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:29:42 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53166
+2020:-12-22 05:29:45 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:29:45 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53172
+2020:-12-22 05:29:52 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:29:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53172
+2020:-12-22 05:29:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53283
+2020:-12-22 05:29:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:29:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53166
+2020:-12-22 05:29:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53277
+2020:-12-22 05:30:03 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:30:03 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:30:03 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53283
+2020:-12-22 05:30:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 05:33:54 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:33:54 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53189
+2020:-12-22 05:33:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:33:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53189
+2020:-12-22 05:33:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53300
+2020:-12-22 05:34:06 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:34:06 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53195
+2020:-12-22 05:34:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:34:11 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53195
+2020:-12-22 05:34:11 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53306
+2020:-12-22 05:34:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:34:20 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:34:20 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53306
+2020:-12-22 05:34:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 05:45:00 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:45:00 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53220
+2020:-12-22 05:45:12 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:45:12 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53226
+2020:-12-22 05:45:22 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:45:22 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53226
+2020:-12-22 05:45:22 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53337
+2020:-12-22 05:45:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:45:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53220
+2020:-12-22 05:45:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53331
+2020:-12-22 05:45:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:45:48 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:45:48 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53331
+2020:-12-22 05:45:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 05:47:02 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:47:02 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53237
+2020:-12-22 05:47:08 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:47:08 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53243
+2020:-12-22 05:47:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:47:12 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53237
+2020:-12-22 05:47:12 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53348
+2020:-12-22 05:47:35 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:47:35 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53248
+2020:-12-22 05:47:40 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:47:40 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53248
+2020:-12-22 05:47:40 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53359
+2020:-12-22 05:47:59 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:47:59 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53255
+2020:-12-22 05:48:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:48:04 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53255
+2020:-12-22 05:48:04 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53366
+2020:-12-22 05:48:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:48:08 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:48:08 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53359
+2020:-12-22 05:48:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 05:56:27 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:56:27 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53278
+2020:-12-22 05:56:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 05:56:34 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53278
+2020:-12-22 05:56:34 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53389
+2020:-12-22 05:56:43 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 05:56:43 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53285
+2020:-12-22 05:56:47 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-22 05:56:47 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53285
+2020:-12-22 05:56:47 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53396
+2020:-12-22 05:57:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-22 05:57:17 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - IP: 127.0.0.1
+2020:-12-22 05:57:17 [Thread-3] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Port: 53396
+2020:-12-22 05:57:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a connection
+2020:-12-22 06:02:14 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 06:02:14 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53308
+2020:-12-22 06:02:18 [main] INFO  com.solvd.automation.lab.fall.Gui.ClientGui - Starting client
+2020:-12-22 06:02:18 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 53314
+2020:-12-22 06:02:24 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-22 06:02:24 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 53314
+2020:-12-22 06:02:24 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 53425
