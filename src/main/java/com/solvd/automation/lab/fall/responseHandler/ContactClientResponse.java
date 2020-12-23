@@ -15,8 +15,8 @@ public class ContactClientResponse implements Runnable {
 
     private String code;
     private String connection;
-
     private MessengerGui messengerGui;
+    private String login;
 
     public ContactClientResponse(String response) {
         int codeFrom = response.indexOf(":") + 1;
@@ -24,8 +24,12 @@ public class ContactClientResponse implements Runnable {
         code = response.substring(codeFrom, codeTo);
 
         int connectionFrom = response.indexOf(":", codeFrom + 1) + 1;
-        int connectionTo = response.indexOf("}");
+        int connectionTo = response.indexOf(",", codeTo + 1);
         connection = response.substring(connectionFrom, connectionTo);
+
+        int loginFrom = response.indexOf(":", connectionFrom + 1) + 1;
+        int loginTo = response.indexOf("}");
+        login = response.substring(loginFrom, loginTo);
     }
 
     @Override
@@ -40,10 +44,10 @@ public class ContactClientResponse implements Runnable {
 
                 LOGGER.info("find client IP: " + ip);
                 LOGGER.info("find client Port: " + port);
-                UserConnection userConnection = new UserConnection(ip, port);
+                UserConnection userConnection = new UserConnection(ip, port,login);
 
                 messengerGui = new MessengerGui();
-                messengerGui.createMessengerFrame("Connection to other's peer", userConnection);
+                messengerGui.createMessengerFrame("Connection " + login, userConnection);
 
                 break;
             case ("\"1\""):

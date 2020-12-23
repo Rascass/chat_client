@@ -51,7 +51,7 @@ public class MyServer implements Runnable {
 
     private void createSelfConnection() {
         LOGGER.info("Creating a connection to your own server with port: " + port);
-        UserConnection selfConnection = new UserConnection(ip, port);
+        UserConnection selfConnection = new UserConnection(ip, port, "my server");
 
         messengerGui = new MessengerGui();
         messengerGui.createMessengerFrame("My hub", selfConnection);

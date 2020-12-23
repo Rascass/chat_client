@@ -64,6 +64,14 @@ public class ServerConnection {
         sendMessageToServer(message);
     }
 
+    public void sendChecksum(String myLogin, String loginOfSender, int checksum){
+        String message = "{\"loginFrom\":\"" + myLogin + "\",\"loginTo\":\"" + loginOfSender +
+                "\",\"checksum\":" + checksum + "}";
+
+        LOGGER.info("sending checksum message: " + message);
+        sendMessageToServer(message);
+    }
+
     private void sendMessageToServer(String message) {
         try {
             writer.write(message);

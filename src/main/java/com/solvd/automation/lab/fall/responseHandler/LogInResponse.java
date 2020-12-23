@@ -16,6 +16,7 @@ public class LogInResponse implements Runnable {
 
     private String code;
     private String description;
+    private String login;
 
     public LogInResponse(String response) {
 
@@ -24,8 +25,12 @@ public class LogInResponse implements Runnable {
         code = response.substring(codeFrom, codeTo);
 
         int descriptionFrom = response.indexOf(":", codeFrom + 1) + 1;
-        int descriptionTo = response.indexOf("}");
+        int descriptionTo = response.indexOf(",", codeTo + 1);
         description = response.substring(descriptionFrom, descriptionTo);
+
+        int loginFrom = response.indexOf(":", descriptionFrom + 1) + 1;
+        int loginTo = response.indexOf("}");
+        login = response.substring(loginFrom, loginTo);
     }
 
     @Override

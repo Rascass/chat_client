@@ -1,9 +1,7 @@
 package com.solvd.automation.lab.fall.parser;
 
-import com.solvd.automation.lab.fall.responseHandler.ContactClientResponse;
-import com.solvd.automation.lab.fall.responseHandler.LogInResponse;
+import com.solvd.automation.lab.fall.responseHandler.*;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
-import com.solvd.automation.lab.fall.responseHandler.RegistrationResponse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +29,18 @@ public class MyParser {
 
             RegistrationResponse registrationResponse = new RegistrationResponse(response);
             Thread thread = new Thread(registrationResponse);
+            thread.start();
+
+        } else if (isFieldsEqualTo(fields, Pattern.CHECKSUM_SENDER_RESPONSE_PARSER)) {
+
+            ChecksumSenderResponse checksumSenderResponse = new ChecksumSenderResponse(response);
+            Thread thread = new Thread(checksumSenderResponse);
+            thread.start();
+
+        } else if (isFieldsEqualTo(fields, Pattern.CHECKSUM_GETTER_RESPONSE_PARSER)) {
+
+            CheckSumReceiverResponse checkSumReceiverResponse = new CheckSumReceiverResponse(response);
+            Thread thread = new Thread(checkSumReceiverResponse);
             thread.start();
 
         } else {

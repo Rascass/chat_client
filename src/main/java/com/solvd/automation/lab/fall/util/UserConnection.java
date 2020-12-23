@@ -15,10 +15,12 @@ public class UserConnection implements Runnable {
     private JTextArea incoming;
     private final String ip;
     private final int port;
+    private String loginTo;
 
-    public UserConnection(String ip, int port) {
+    public UserConnection(String ip, int port, String loginTo) {
         this.ip = ip;
         this.port = port;
+        this.loginTo = loginTo;
     }
 
     @Override
@@ -62,12 +64,37 @@ public class UserConnection implements Runnable {
         try {
             LOGGER.info("Sending message to server");
 
-            writer.write(message);
-            writer.newLine();
-            writer.flush();
+            int checksum = this.findChecksum(message);
+
+            ServerConnection.getInstance().sendChecksum("Dima", "Anna", checksum);
+            this.write(checksum);
+            this.write(message);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    private void write(String message) throws IOException {
+        writer.write(message);
+        writer.newLine();
+        writer.flush();
+    }
+
+    private void write(int message) throws IOException {
+        writer.write(message);
+        writer.newLine();
+        writer.flush();
+    }
+
+    private int findChecksum(String message) {
+        int sum = 0;
+        byte[] bytes = message.getBytes();
+
+        for (int i = 0; i < bytes.length; i++) {
+            sum += bytes[i];
+        }
+
+        return sum;
     }
 
     public void setIncoming(JTextArea incoming) {
