@@ -1,7 +1,5 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
-import com.solvd.automation.lab.fall.gui.ClientGui;
-import com.solvd.automation.lab.fall.gui.FindClientGui;
 import com.solvd.automation.lab.fall.gui.QuickMessageGui;
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
 import com.solvd.automation.lab.fall.io.PropertyReader;
@@ -41,10 +39,7 @@ public class LogInResponse implements Runnable {
         switch (code) {
             case ("\"0\""):
 
-                FindClientGui findClientGui = FindClientGui.getFindClientGui();
                 ServerConnection connection = ServerConnection.getInstance();
-
-                ClientGui.resetFrameTo(findClientGui.getFrame());
 
                 int port = connection.getYourOwnPort() +
                         Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.MAGIC_NUMBER));

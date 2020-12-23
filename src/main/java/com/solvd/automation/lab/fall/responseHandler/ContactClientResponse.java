@@ -47,11 +47,12 @@ public class ContactClientResponse implements Runnable {
                 UserConnection userConnection = new UserConnection(ip, port,login);
 
                 messengerGui = new MessengerGui();
-                messengerGui.createMessengerFrame("Connection " + login, userConnection);
+                messengerGui.createMessengerFrame("Connection " + login, userConnection, login);
 
                 break;
             case ("\"1\""):
             case ("\"2\""):
+            case ("\"3\""):
                 quickMessageGui.go(connection + ", with code: " + code);
                 break;
             default:

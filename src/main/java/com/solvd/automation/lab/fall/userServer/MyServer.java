@@ -1,10 +1,12 @@
 package com.solvd.automation.lab.fall.userServer;
 
-import com.solvd.automation.lab.fall.gui.MessengerGui;
+import com.solvd.automation.lab.fall.gui.ClientGui;
+import com.solvd.automation.lab.fall.gui.HubGui;
 import com.solvd.automation.lab.fall.util.UserConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.swing.*;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,7 +18,7 @@ public class MyServer implements Runnable {
 
     private Set<ConnectionHandler> connections;
     private int port;
-    private MessengerGui messengerGui;
+    private HubGui hubGui;
     private final String ip = "127.0.0.1";
 
     public MyServer(int port) {
@@ -53,8 +55,9 @@ public class MyServer implements Runnable {
         LOGGER.info("Creating a connection to your own server with port: " + port);
         UserConnection selfConnection = new UserConnection(ip, port, "my server");
 
-        messengerGui = new MessengerGui();
-        messengerGui.createMessengerFrame("My hub", selfConnection);
+        hubGui = HubGui.getHub();
+        JFrame frame = hubGui.createHubFrame("MyHub", selfConnection);
+        ClientGui.resetFrameTo(frame);
     }
 
     public void sendEveryOne(String message) {
@@ -66,7 +69,6 @@ public class MyServer implements Runnable {
             connectionHandler.writer(message);
         }
     }
-
 
     public class ConnectionHandler implements Runnable {
         private BufferedReader in;

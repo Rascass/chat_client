@@ -1,5 +1,6 @@
 package com.solvd.automation.lab.fall.gui;
 
+import com.solvd.automation.lab.fall.util.ServerConnection;
 import com.solvd.automation.lab.fall.util.UserConnection;
 
 import javax.swing.*;
@@ -7,16 +8,28 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
-public class MessengerGui {
+public class HubGui {
+    private static HubGui instance = null;
     private JFrame frame;
     private JTextArea incoming;
     private JTextField outgoing;
-    private JPanel chatPanel = new JPanel();
+    private JPanel chatPanel;
+    private JTextField contactLogin;
     private UserConnection userConnection;
     private String login;
 
-    public JFrame createMessengerFrame(String name, UserConnection connection, String login) {
+    private HubGui() {
+    }
+
+    public synchronized static HubGui getHub() {
+        if (instance == null){
+            instance = new HubGui();
+        }
+
+        return instance;
+    }
+
+    public JFrame createHubFrame(String name, UserConnection connection) {
 
         this.userConnection = connection;
         Thread thread = new Thread(userConnection);
@@ -26,6 +39,7 @@ public class MessengerGui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new BorderLayout());
 
+        chatPanel = new JPanel();
         chatPanel.setLayout(new BoxLayout(chatPanel, BoxLayout.Y_AXIS));
 
         JPanel sendPanel = new JPanel();
@@ -45,6 +59,17 @@ public class MessengerGui {
         JButton sendButton = new JButton("Send");
         sendButton.addActionListener(new SendButtonListener());
 
+        JPanel findClientPanel = new JPanel();
+        findClientPanel.setLayout(new BoxLayout(findClientPanel, BoxLayout.X_AXIS));
+
+        contactLogin = new JTextField("Enter your friend's login", 20);
+
+        JButton findButton = new JButton("Find contact");
+        findButton.addActionListener(new FindButtonListener());
+
+        findClientPanel.add(contactLogin);
+        findClientPanel.add(findButton);
+
         sendPanel.add(outgoing);
         sendPanel.add(sendButton);
 
@@ -52,6 +77,7 @@ public class MessengerGui {
         chatPanel.add(sendPanel);
 
         mainPanel.add(chatPanel, BorderLayout.CENTER);
+        mainPanel.add(findClientPanel, BorderLayout.SOUTH);
 
         frame.add(mainPanel);
 
@@ -70,5 +96,14 @@ public class MessengerGui {
         }
     }
 
+    public class FindButtonListener implements ActionListener {
 
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            ServerConnection connection = ServerConnection.getInstance();
+
+            connection.findContact(contactLogin.getText());
+        }
+    }
 }
+
