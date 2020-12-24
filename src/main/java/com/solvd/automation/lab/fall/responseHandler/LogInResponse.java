@@ -50,7 +50,7 @@ public class LogInResponse implements Runnable {
                         Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.MAGIC_NUMBER));
 
 
-                MyServer server = new MyServer(port, login);
+                MyServer server = MyServer.createMyServer(port, login);
                 Thread serverThread = new Thread(server);
                 serverThread.start();
 

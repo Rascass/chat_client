@@ -15,6 +15,7 @@ import java.util.*;
 public class MyServer implements Runnable {
 
     private static final Logger LOGGER = LogManager.getLogger();
+    private static MyServer instance = null;
 
     private Set<ConnectionHandler> connections;
     private int port;
@@ -22,9 +23,34 @@ public class MyServer implements Runnable {
     private final String ip = "127.0.0.1";
     private String login;
 
-    public MyServer(int port, String login) {
+    private MyServer(int port, String login) {
         this.port = port;
         this.login = login;
+    }
+
+    public static synchronized MyServer createMyServer(int port, String login) {
+        if (instance == null) {
+            instance = new MyServer(port, login);
+        }
+        return instance;
+    }
+
+    public static MyServer getMyServer() {
+        return instance;
+    }
+
+    public synchronized void setCheckSumFromServer(String login, int checksumServer) {
+        Iterator<ConnectionHandler> it = connections.iterator();
+
+        while (it.hasNext()) {
+            ConnectionHandler connectionHandler = it.next();
+            LOGGER.info("Setting checksumServer");
+            if (connectionHandler.getUserLogin().equals(login)) {
+                LOGGER.info("Found connection");
+                connectionHandler.setCheckSumServer(checksumServer);
+                break;
+            }
+        }
     }
 
     public void run() {
@@ -81,6 +107,7 @@ public class MyServer implements Runnable {
         private BufferedReader in;
         private BufferedWriter out;
         private String userLogin;
+        private int checksumServer;
 
         public ConnectionHandler(Socket socket) {
 
@@ -104,15 +131,34 @@ public class MyServer implements Runnable {
             try {
                 while ((tmp = in.readLine()) != null) {
                     message = tmp;
-                    LOGGER.info("Read message: " + message);
                     int checksum = findChecksum(message);
+                    LOGGER.info("Read message: " + message + ", checksum: " + checksum);
 
-                    LOGGER.info("And here we need somehow compare checksums... Message checksum: " + checksum);
-                    sendEveryOne(userLogin + ": " + message);
+                    checksumServer = -1;
+                    while (true) {
+                        if (checksumServer>-1){
+                            break;
+                        }
+                    }
+
+                    if (checksumServer == checksum) {
+                        LOGGER.info("Checksums matched, printing message into chat");
+                        sendEveryOne(userLogin + ": " + message);
+
+                    } else {
+                        LOGGER.info("data integrity violated, message was not sent");
+                    }
+
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
+        }
+
+
+        public void setCheckSumServer(int checksumServer) {
+            LOGGER.info("This checksum = checksumServer");
+            this.checksumServer = checksumServer;
         }
 
         public void writer(String message) {
@@ -134,6 +180,10 @@ public class MyServer implements Runnable {
             }
 
             return sum;
+        }
+
+        public String getUserLogin() {
+            return userLogin;
         }
     }
 }

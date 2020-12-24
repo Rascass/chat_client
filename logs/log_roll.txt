@@ -1698,3 +1698,1063 @@
 2020:-12-24 03:17:15 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: Hello
 2020:-12-24 03:17:15 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - Checksum: 500
 2020:-12-24 03:17:15 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 03:54:32 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:54:32 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63818
+2020:-12-24 03:54:38 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:54:38 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63824
+2020:-12-24 03:54:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 03:54:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:54:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63824
+2020:-12-24 03:54:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63935
+2020:-12-24 03:54:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63935
+2020:-12-24 03:54:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:54:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 03:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:54:48 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63818
+2020:-12-24 03:54:48 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63929
+2020:-12-24 03:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63929
+2020:-12-24 03:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:54:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 03:54:55 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 03:54:55 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 03:54:55 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 63935
+2020:-12-24 03:54:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:55:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 03:55:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 03:55:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 03:55:01 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi
+2020:-12-24 03:55:16 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: wtf
+2020:-12-24 03:55:16 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server wtf
+2020:-12-24 03:55:16 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":337}
+2020:-12-24 03:55:16 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: wtf
+2020:-12-24 03:55:37 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:55:37 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63838
+2020:-12-24 03:55:40 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:55:40 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63844
+2020:-12-24 03:55:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 03:55:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:55:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63838
+2020:-12-24 03:55:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63949
+2020:-12-24 03:55:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63949
+2020:-12-24 03:55:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:55:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 03:55:50 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:55:50 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63844
+2020:-12-24 03:55:50 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63955
+2020:-12-24 03:55:50 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63955
+2020:-12-24 03:55:50 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:55:55 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:55:55 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63853
+2020:-12-24 03:55:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 03:55:59 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:55:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63853
+2020:-12-24 03:55:59 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63964
+2020:-12-24 03:55:59 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63964
+2020:-12-24 03:55:59 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:56:03 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:56:03 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63860
+2020:-12-24 03:56:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 03:56:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:56:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63860
+2020:-12-24 03:56:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63971
+2020:-12-24 03:56:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63971
+2020:-12-24 03:56:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:56:56 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 03:56:56 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63871
+2020:-12-24 03:57:00 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 03:57:00 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 03:57:00 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63871
+2020:-12-24 03:57:00 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 63982
+2020:-12-24 03:57:00 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 63982
+2020:-12-24 03:57:00 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:57:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-24 03:57:04 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Anna
+2020:-12-24 03:57:04 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 03:57:04 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 63971
+2020:-12-24 03:57:04 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 03:57:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 03:57:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 03:57:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Anna","checksum":177}
+2020:-12-24 03:57:09 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi
+2020:-12-24 03:57:09 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 03:57:09 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima ", checksum: 177
+2020:-12-24 03:57:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: DSs
+2020:-12-24 03:57:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server DSs
+2020:-12-24 03:57:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Anna","checksum":266}
+2020:-12-24 03:57:29 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: DSs
+2020:-12-24 03:57:29 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna ", checksum: 266
+2020:-12-24 03:57:29 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 04:09:42 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:09:42 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63899
+2020:-12-24 04:09:53 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:09:53 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63905
+2020:-12-24 04:09:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:09:56 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:09:56 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63899
+2020:-12-24 04:09:56 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64010
+2020:-12-24 04:09:56 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64010
+2020:-12-24 04:09:56 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:10:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:10:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:10:02 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63905
+2020:-12-24 04:10:02 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64016
+2020:-12-24 04:10:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64016
+2020:-12-24 04:10:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:10:10 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:10:10 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:10:10 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:10:10 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64010
+2020:-12-24 04:10:10 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: ddds
+2020:-12-24 04:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server ddds
+2020:-12-24 04:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":415}
+2020:-12-24 04:10:14 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: ddds
+2020:-12-24 04:10:47 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:10:47 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63922
+2020:-12-24 04:10:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:10:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:10:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63922
+2020:-12-24 04:10:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64033
+2020:-12-24 04:10:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64033
+2020:-12-24 04:10:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:10:56 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:10:56 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63931
+2020:-12-24 04:11:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:11:04 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:11:04 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63931
+2020:-12-24 04:11:04 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64042
+2020:-12-24 04:11:04 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64042
+2020:-12-24 04:11:04 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:11:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:11:12 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:11:12 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:11:12 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64033
+2020:-12-24 04:11:12 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:11:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 04:11:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 04:11:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 04:11:19 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss
+2020:-12-24 04:11:19 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:11:19 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna ", checksum: 345
+2020:-12-24 04:21:07 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:21:07 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63957
+2020:-12-24 04:21:12 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:21:12 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63964
+2020:-12-24 04:21:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:21:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:21:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63964
+2020:-12-24 04:21:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64075
+2020:-12-24 04:21:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64075
+2020:-12-24 04:21:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:21:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:21:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:21:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63957
+2020:-12-24 04:21:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64068
+2020:-12-24 04:21:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64068
+2020:-12-24 04:21:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:21:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:21:33 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:21:33 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:21:33 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64075
+2020:-12-24 04:21:33 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:21:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 04:21:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 04:21:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 04:21:35 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss
+2020:-12-24 04:21:35 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:21:35 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna ", checksum: 345
+2020:-12-24 04:21:35 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - from-1, to: -1
+2020:-12-24 04:22:42 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:22:42 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63982
+2020:-12-24 04:22:49 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:22:49 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 63988
+2020:-12-24 04:22:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:22:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:22:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63988
+2020:-12-24 04:22:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64099
+2020:-12-24 04:22:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64099
+2020:-12-24 04:22:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:23:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:23:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:23:01 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 63982
+2020:-12-24 04:23:01 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64093
+2020:-12-24 04:23:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64093
+2020:-12-24 04:23:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:23:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:23:07 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:23:07 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:23:07 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64099
+2020:-12-24 04:23:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:23:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 04:23:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 04:23:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 04:23:11 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi
+2020:-12-24 04:23:11 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:24:04 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:24:04 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64013
+2020:-12-24 04:24:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:24:09 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:24:09 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64013
+2020:-12-24 04:24:09 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64124
+2020:-12-24 04:24:09 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64124
+2020:-12-24 04:24:09 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:24:16 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:24:16 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64020
+2020:-12-24 04:24:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:24:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:24:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64020
+2020:-12-24 04:24:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64131
+2020:-12-24 04:24:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64131
+2020:-12-24 04:24:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:24:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:24:43 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:24:43 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:24:43 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64124
+2020:-12-24 04:24:43 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:24:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: ss
+2020:-12-24 04:24:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server ss
+2020:-12-24 04:24:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":230}
+2020:-12-24 04:24:56 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: ss
+2020:-12-24 04:24:56 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:24:56 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna ", checksum: 230
+2020:-12-24 04:24:56 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - from-1, to: -1
+2020:-12-24 04:28:22 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:28:22 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64032
+2020:-12-24 04:28:31 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:28:31 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64038
+2020:-12-24 04:28:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:28:36 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:28:36 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64038
+2020:-12-24 04:28:36 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64149
+2020:-12-24 04:28:36 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64149
+2020:-12-24 04:28:36 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:28:40 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:28:40 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64046
+2020:-12-24 04:28:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:28:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:28:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64046
+2020:-12-24 04:28:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64157
+2020:-12-24 04:28:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64157
+2020:-12-24 04:28:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:28:52 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:28:52 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:28:52 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:28:52 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64149
+2020:-12-24 04:28:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:28:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 04:28:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 04:28:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 04:28:57 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss
+2020:-12-24 04:28:57 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:30:34 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:30:34 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64092
+2020:-12-24 04:30:38 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:30:38 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64099
+2020:-12-24 04:30:41 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:30:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:30:41 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64092
+2020:-12-24 04:30:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64203
+2020:-12-24 04:30:41 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64203
+2020:-12-24 04:30:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:30:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:30:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:30:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64099
+2020:-12-24 04:30:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64210
+2020:-12-24 04:30:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64210
+2020:-12-24 04:30:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:31:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:31:02 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:31:02 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:31:02 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64203
+2020:-12-24 04:31:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:31:05 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: SSS
+2020:-12-24 04:31:05 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server SSS
+2020:-12-24 04:31:05 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":249}
+2020:-12-24 04:31:05 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: SSS
+2020:-12-24 04:31:05 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:31:05 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna 
+2020:-12-24 04:32:57 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:32:57 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64115
+2020:-12-24 04:33:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:33:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:33:02 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64115
+2020:-12-24 04:33:02 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64226
+2020:-12-24 04:33:02 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64226
+2020:-12-24 04:33:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:33:13 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:33:13 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64124
+2020:-12-24 04:33:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:33:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:33:17 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64124
+2020:-12-24 04:33:17 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64235
+2020:-12-24 04:33:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64235
+2020:-12-24 04:33:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:33:23 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:33:23 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64133
+2020:-12-24 04:33:30 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:33:30 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64133
+2020:-12-24 04:33:30 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64244
+2020:-12-24 04:33:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:33:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64244
+2020:-12-24 04:33:31 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:33:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:33:36 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:33:36 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:33:36 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64235
+2020:-12-24 04:34:57 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:34:57 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64165
+2020:-12-24 04:35:03 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:35:03 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64171
+2020:-12-24 04:35:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:35:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:35:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64171
+2020:-12-24 04:35:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64282
+2020:-12-24 04:35:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64282
+2020:-12-24 04:35:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:35:13 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:35:13 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64178
+2020:-12-24 04:35:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:35:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:35:17 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64178
+2020:-12-24 04:35:17 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64289
+2020:-12-24 04:35:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64289
+2020:-12-24 04:35:17 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:35:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:35:23 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:35:23 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:35:23 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64282
+2020:-12-24 04:35:23 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:35:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: AAAA
+2020:-12-24 04:35:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server AAAA
+2020:-12-24 04:35:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":260}
+2020:-12-24 04:35:26 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: AAAA
+2020:-12-24 04:35:26 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:36:34 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:36:34 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64192
+2020:-12-24 04:36:41 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:36:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:36:41 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64192
+2020:-12-24 04:36:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64303
+2020:-12-24 04:36:41 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64303
+2020:-12-24 04:36:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:36:46 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:36:46 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64200
+2020:-12-24 04:36:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:36:51 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:36:51 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64200
+2020:-12-24 04:36:51 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64311
+2020:-12-24 04:36:51 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64311
+2020:-12-24 04:36:51 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:36:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:36:56 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:36:56 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:36:56 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64303
+2020:-12-24 04:36:56 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:37:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 04:37:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 04:37:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 04:37:07 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi
+2020:-12-24 04:37:07 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:37:07 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna ;  Anna 
+2020:-12-24 04:42:33 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:42:33 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64221
+2020:-12-24 04:42:37 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:42:38 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64227
+2020:-12-24 04:42:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:42:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:42:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64227
+2020:-12-24 04:42:44 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64338
+2020:-12-24 04:42:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64338
+2020:-12-24 04:42:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:42:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:42:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:42:58 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64221
+2020:-12-24 04:42:58 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64332
+2020:-12-24 04:42:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64332
+2020:-12-24 04:42:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:43:03 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:43:03 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:43:03 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:43:03 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64338
+2020:-12-24 04:43:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:43:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 04:43:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 04:43:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 04:43:06 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi
+2020:-12-24 04:43:06 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; 
+2020:-12-24 04:43:06 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:49:54 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:49:54 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64295
+2020:-12-24 04:50:04 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:50:04 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64300
+2020:-12-24 04:50:10 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:50:11 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:50:11 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64300
+2020:-12-24 04:50:11 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64411
+2020:-12-24 04:50:11 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64411
+2020:-12-24 04:50:11 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:50:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:50:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:50:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64295
+2020:-12-24 04:50:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64406
+2020:-12-24 04:50:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64406
+2020:-12-24 04:50:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:50:24 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:50:24 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:50:24 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:50:24 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64411
+2020:-12-24 04:50:24 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:50:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: AAA
+2020:-12-24 04:50:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server AAA
+2020:-12-24 04:50:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":195}
+2020:-12-24 04:50:27 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: AAA, checksum: 195
+2020:-12-24 04:50:27 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - data integrity violated, message was not sent
+2020:-12-24 04:50:27 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 04:50:27 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 04:50:27 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 04:50:27 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 04:56:17 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:56:17 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64328
+2020:-12-24 04:56:33 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:56:33 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64335
+2020:-12-24 04:56:41 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 04:56:41 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64341
+2020:-12-24 04:57:00 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 04:57:01 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64341
+2020:-12-24 04:57:01 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64452
+2020:-12-24 04:57:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:57:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64452
+2020:-12-24 04:57:01 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:57:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 04:57:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64335
+2020:-12-24 04:57:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 04:57:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64446
+2020:-12-24 04:57:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64446
+2020:-12-24 04:57:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:57:15 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 04:57:15 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 04:57:15 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 04:57:15 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64452
+2020:-12-24 04:57:15 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 04:57:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: AA
+2020:-12-24 04:57:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server AA
+2020:-12-24 04:57:17 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":130}
+2020:-12-24 04:57:17 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: AA, checksum: 130
+2020:-12-24 04:57:17 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - data integrity violated, message was not sent
+2020:-12-24 05:01:53 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:01:53 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64363
+2020:-12-24 05:01:58 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:01:58 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64369
+2020:-12-24 05:02:05 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:02:05 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64363
+2020:-12-24 05:02:05 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64474
+2020:-12-24 05:02:05 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:02:05 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64474
+2020:-12-24 05:02:05 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:02:16 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:02:16 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:02:16 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64369
+2020:-12-24 05:02:16 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64480
+2020:-12-24 05:02:16 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64480
+2020:-12-24 05:02:16 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:02:24 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:02:24 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:02:24 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:02:24 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64474
+2020:-12-24 05:02:24 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:02:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:02:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:02:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 05:02:42 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:02:42 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:02:42 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:02:58 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:03:15 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:03:18 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:04:09 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: sss
+2020:-12-24 05:04:09 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: sss
+2020:-12-24 05:04:09 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: sss
+2020:-12-24 05:04:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hello
+2020:-12-24 05:04:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hello
+2020:-12-24 05:04:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":500}
+2020:-12-24 05:04:33 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hello, checksum: 500
+2020:-12-24 05:04:33 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:04:45 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:04:45 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:04:45 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:04:45 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:04:48 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: Hello
+2020:-12-24 05:04:48 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Hello
+2020:-12-24 05:04:48 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Hello
+2020:-12-24 05:05:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: GENERAL KENOBY
+2020:-12-24 05:05:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server GENERAL KENOBY
+2020:-12-24 05:05:06 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":998}
+2020:-12-24 05:05:06 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: GENERAL KENOBY, checksum: 998
+2020:-12-24 05:05:06 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:05:06 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:05:06 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:05:06 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:05:06 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Dima: GENERAL KENOBY
+2020:-12-24 05:05:06 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:05:06 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: GENERAL KENOBY
+2020:-12-24 05:05:06 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: GENERAL KENOBY
+2020:-12-24 05:07:06 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:07:06 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64389
+2020:-12-24 05:07:11 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:07:11 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64395
+2020:-12-24 05:07:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:07:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:07:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64389
+2020:-12-24 05:07:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64500
+2020:-12-24 05:07:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64500
+2020:-12-24 05:07:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:07:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:07:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:07:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64395
+2020:-12-24 05:07:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64506
+2020:-12-24 05:07:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64506
+2020:-12-24 05:07:21 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:07:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:07:26 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:07:26 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:07:26 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64500
+2020:-12-24 05:07:26 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:07:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: FFF
+2020:-12-24 05:07:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server FFF
+2020:-12-24 05:07:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":210}
+2020:-12-24 05:07:29 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: FFF, checksum: 210
+2020:-12-24 05:07:29 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:08:24 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:08:24 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64410
+2020:-12-24 05:08:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:08:29 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:08:29 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64410
+2020:-12-24 05:08:29 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64521
+2020:-12-24 05:08:29 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64521
+2020:-12-24 05:08:29 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:08:36 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:08:36 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64418
+2020:-12-24 05:08:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:08:42 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:08:42 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64418
+2020:-12-24 05:08:42 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64529
+2020:-12-24 05:08:42 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64529
+2020:-12-24 05:08:42 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:08:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: 
+2020:-12-24 05:08:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server 
+2020:-12-24 05:08:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Anna","checksum":0}
+2020:-12-24 05:08:51 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: , checksum: 0
+2020:-12-24 05:08:51 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:08:51 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:08:51 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:08:51 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:08:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:08:54 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:08:54 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:08:54 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64521
+2020:-12-24 05:08:54 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:08:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: hi 
+2020:-12-24 05:08:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server hi 
+2020:-12-24 05:08:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":241}
+2020:-12-24 05:08:59 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:08:59 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: hi , checksum: 241
+2020:-12-24 05:08:59 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:08:59 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:08:59 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:08:59 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:08:59 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 05:08:59 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: hi 
+2020:-12-24 05:08:59 [Thread-10] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: hi 
+2020:-12-24 05:08:59 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: hi 
+2020:-12-24 05:09:14 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:09:14 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64427
+2020:-12-24 05:09:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Lena","password":2364715}
+2020:-12-24 05:09:23 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:09:23 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64427
+2020:-12-24 05:09:23 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64538
+2020:-12-24 05:09:23 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64538
+2020:-12-24 05:09:23 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:09:30 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:09:30 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:09:30 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:09:30 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64521
+2020:-12-24 05:09:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Yo
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Yo
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":200}
+2020:-12-24 05:09:35 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Yo, checksum: 200
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:35 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: 
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server 
+2020:-12-24 05:09:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":0}
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:35 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: 
+2020:-12-24 05:09:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server 
+2020:-12-24 05:09:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":0}
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:38 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: sss
+2020:-12-24 05:09:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:09:42 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":345}
+2020:-12-24 05:09:42 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:09:42 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:09:42 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:42 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:42 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:42 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 05:09:42 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:42 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Dima: sss
+2020:-12-24 05:09:42 [Thread-13] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:42 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: sss
+2020:-12-24 05:09:42 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: sss
+2020:-12-24 05:09:42 [Thread-10] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: sss
+2020:-12-24 05:09:47 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: dsdas
+2020:-12-24 05:09:47 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server dsdas
+2020:-12-24 05:09:47 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":527}
+2020:-12-24 05:09:47 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:47 [Thread-14] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:09:47 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:47 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:47 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:47 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: But why...
+2020:-12-24 05:09:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server But why...
+2020:-12-24 05:09:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":813}
+2020:-12-24 05:09:54 [Thread-13] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:54 [Thread-15] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:09:54 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:54 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:54 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:54 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sadsa
+2020:-12-24 05:09:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sadsa
+2020:-12-24 05:09:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":524}
+2020:-12-24 05:09:58 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sadsa, checksum: 524
+2020:-12-24 05:09:58 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:09:58 [Thread-16] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:09:58 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:58 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:58 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:09:58 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:09:58 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 05:09:58 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: sadsa
+2020:-12-24 05:09:58 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: sadsa
+2020:-12-24 05:09:58 [Thread-10] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: sadsa
+2020:-12-24 05:09:58 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: sadsa
+2020:-12-24 05:10:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: only 2 works
+2020:-12-24 05:10:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server only 2 works
+2020:-12-24 05:10:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":1130}
+2020:-12-24 05:10:08 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: only 2 works, checksum: 1130
+2020:-12-24 05:10:08 [Thread-17] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:10:08 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:10:08 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:10:08 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:10:08 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:10:08 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 05:10:08 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Dima: only 2 works
+2020:-12-24 05:10:08 [Thread-18] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:10:08 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: only 2 works
+2020:-12-24 05:10:08 [Thread-10] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: only 2 works
+2020:-12-24 05:10:08 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: only 2 works
+2020:-12-24 05:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: (
+2020:-12-24 05:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server (
+2020:-12-24 05:10:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":40}
+2020:-12-24 05:10:14 [Thread-14] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:10:14 [Thread-19] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:10:14 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:10:14 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:10:14 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:10:14 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:11:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: not for me
+2020:-12-24 05:11:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server not for me
+2020:-12-24 05:11:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":938}
+2020:-12-24 05:11:02 [Thread-15] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:11:02 [Thread-20] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:11:02 [Thread-20] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:11:02 [Thread-20] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:11:02 [Thread-20] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:11:02 [Thread-20] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:14:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: aaaa
+2020:-12-24 05:14:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server aaaa
+2020:-12-24 05:14:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":388}
+2020:-12-24 05:14:11 [Thread-16] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:14:11 [Thread-21] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:14:11 [Thread-21] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:14:11 [Thread-21] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:14:11 [Thread-21] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:14:11 [Thread-21] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:15:52 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:15:52 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64453
+2020:-12-24 05:15:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:15:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:15:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64453
+2020:-12-24 05:15:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64564
+2020:-12-24 05:15:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64564
+2020:-12-24 05:15:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:16:03 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:16:03 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64460
+2020:-12-24 05:16:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:16:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:16:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64460
+2020:-12-24 05:16:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64571
+2020:-12-24 05:16:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64571
+2020:-12-24 05:16:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:16:15 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:16:15 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64467
+2020:-12-24 05:16:19 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Lena","password":2364715}
+2020:-12-24 05:16:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:16:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64467
+2020:-12-24 05:16:19 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64578
+2020:-12-24 05:16:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64578
+2020:-12-24 05:16:19 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:16:25 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:16:25 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:16:25 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:16:25 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64564
+2020:-12-24 05:16:25 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:16:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:16:33 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:16:33 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:16:33 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64564
+2020:-12-24 05:16:33 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:16:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: hi all
+2020:-12-24 05:16:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server hi all
+2020:-12-24 05:16:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":554}
+2020:-12-24 05:16:43 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: hi all, checksum: 554
+2020:-12-24 05:16:43 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:16:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: asdsa
+2020:-12-24 05:16:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server asdsa
+2020:-12-24 05:16:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":524}
+2020:-12-24 05:16:51 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: asdsa, checksum: 524
+2020:-12-24 05:16:51 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:16:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:16:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:16:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":345}
+2020:-12-24 05:16:54 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:16:54 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:16:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:16:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:16:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":345}
+2020:-12-24 05:16:58 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:17:52 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:17:52 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64485
+2020:-12-24 05:17:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:17:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:17:58 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64485
+2020:-12-24 05:17:58 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64596
+2020:-12-24 05:17:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64596
+2020:-12-24 05:17:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:18:02 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:18:02 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64493
+2020:-12-24 05:18:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Lena","password":2364715}
+2020:-12-24 05:18:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:18:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64493
+2020:-12-24 05:18:08 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64604
+2020:-12-24 05:18:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64604
+2020:-12-24 05:18:08 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:18:13 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:18:14 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64501
+2020:-12-24 05:18:18 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:18:18 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:18:18 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64501
+2020:-12-24 05:18:18 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64612
+2020:-12-24 05:18:18 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64612
+2020:-12-24 05:18:18 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:18:32 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:18:32 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:18:32 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:18:32 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64596
+2020:-12-24 05:18:32 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:18:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:18:39 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:18:39 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:18:39 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64596
+2020:-12-24 05:18:39 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:18:53 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: hi
+2020:-12-24 05:18:53 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server hi
+2020:-12-24 05:18:53 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":209}
+2020:-12-24 05:18:53 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: hi, checksum: 209
+2020:-12-24 05:18:53 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:18:53 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:18:53 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:18:53 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:18:53 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:18:53 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:19:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:19:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:19:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":345}
+2020:-12-24 05:19:09 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:19:09 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:19:09 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:19:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sadasd
+2020:-12-24 05:19:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sadasd
+2020:-12-24 05:19:11 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":624}
+2020:-12-24 05:19:11 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sadasd, checksum: 624
+2020:-12-24 05:19:11 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:19:11 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:19:11 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:11 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:19:11 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:19:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: ale
+2020:-12-24 05:19:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server ale
+2020:-12-24 05:19:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":306}
+2020:-12-24 05:19:43 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:19:43 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:25:10 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:25:10 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64527
+2020:-12-24 05:25:12 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:25:12 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64532
+2020:-12-24 05:25:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:25:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:25:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64532
+2020:-12-24 05:25:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64643
+2020:-12-24 05:25:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64643
+2020:-12-24 05:25:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:25:26 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:25:26 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:25:26 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64527
+2020:-12-24 05:25:26 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64638
+2020:-12-24 05:25:26 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64638
+2020:-12-24 05:25:26 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:25:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:25:35 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:25:35 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:25:35 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64638
+2020:-12-24 05:25:35 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:25:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 05:25:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 05:25:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 05:25:39 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi, checksum: 177
+2020:-12-24 05:25:39 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:25:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: sssasa
+2020:-12-24 05:25:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sssasa
+2020:-12-24 05:25:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":654}
+2020:-12-24 05:25:44 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sssasa, checksum: 654
+2020:-12-24 05:25:44 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:27:32 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:27:32 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64549
+2020:-12-24 05:27:36 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:27:36 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64556
+2020:-12-24 05:27:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:27:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:27:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64549
+2020:-12-24 05:27:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64660
+2020:-12-24 05:27:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64660
+2020:-12-24 05:27:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:27:52 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:27:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:27:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64556
+2020:-12-24 05:27:52 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64667
+2020:-12-24 05:27:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64667
+2020:-12-24 05:27:52 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:27:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:27:57 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:27:57 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:27:57 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64660
+2020:-12-24 05:27:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:28:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:28:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:28:01 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 05:28:01 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:28:01 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:28:01 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:28:01 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:28:01 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:28:01 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:28:01 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:28:57 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:28:58 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64593
+2020:-12-24 05:29:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:29:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:29:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64593
+2020:-12-24 05:29:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64704
+2020:-12-24 05:29:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64704
+2020:-12-24 05:29:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:29:13 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:29:13 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64601
+2020:-12-24 05:29:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:29:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:29:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64601
+2020:-12-24 05:29:20 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64712
+2020:-12-24 05:29:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64712
+2020:-12-24 05:29:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:29:30 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:29:30 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:29:30 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:29:30 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64704
+2020:-12-24 05:29:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:29:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sad
+2020:-12-24 05:29:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sad
+2020:-12-24 05:29:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":312}
+2020:-12-24 05:29:35 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sad, checksum: 312
+2020:-12-24 05:29:35 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:31:05 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:31:05 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64613
+2020:-12-24 05:31:10 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:31:10 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:31:10 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64613
+2020:-12-24 05:31:10 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64724
+2020:-12-24 05:31:10 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64724
+2020:-12-24 05:31:10 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:31:19 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:31:19 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64620
+2020:-12-24 05:31:25 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:31:25 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:31:25 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64620
+2020:-12-24 05:31:25 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64731
+2020:-12-24 05:31:25 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64731
+2020:-12-24 05:31:25 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:31:34 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:31:34 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:31:34 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:31:34 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64724
+2020:-12-24 05:31:34 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:31:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: FOUND u
+2020:-12-24 05:31:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server FOUND u
+2020:-12-24 05:31:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":529}
+2020:-12-24 05:31:39 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:31:39 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: FOUND u, checksum: 529
+2020:-12-24 05:33:26 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:33:26 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64663
+2020:-12-24 05:33:31 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 05:33:31 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64663
+2020:-12-24 05:33:31 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:33:31 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64774
+2020:-12-24 05:33:31 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64774
+2020:-12-24 05:33:32 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:33:37 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 05:33:37 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64670
+2020:-12-24 05:33:43 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 05:33:43 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 05:33:43 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64670
+2020:-12-24 05:33:43 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 64781
+2020:-12-24 05:33:43 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 64781
+2020:-12-24 05:33:44 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:33:58 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 05:33:58 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 05:33:58 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:33:58 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64774
+2020:-12-24 05:33:58 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:34:00 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sss
+2020:-12-24 05:34:00 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sss
+2020:-12-24 05:34:00 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":345}
+2020:-12-24 05:34:00 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sss, checksum: 345
+2020:-12-24 05:34:00 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:34:00 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:34:00 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:00 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:00 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:00 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:20 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Anna"}
+2020:-12-24 05:34:20 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Anna
+2020:-12-24 05:34:20 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 05:34:20 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 64781
+2020:-12-24 05:34:20 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 05:34:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sdsasdas
+2020:-12-24 05:34:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sdsasdas
+2020:-12-24 05:34:23 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Anna","checksum":854}
+2020:-12-24 05:34:23 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:23 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sdsasdas, checksum: 854
+2020:-12-24 05:34:23 [Thread-11] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:34:23 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:23 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:23 [Thread-11] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:23 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 05:34:23 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Dima: sdsasdas
+2020:-12-24 05:34:23 [Thread-10] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: sdsasdas
+2020:-12-24 05:34:23 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: sdsasdas
+2020:-12-24 05:34:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: sdaa
+2020:-12-24 05:34:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sdaa
+2020:-12-24 05:34:33 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Anna","checksum":409}
+2020:-12-24 05:34:33 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sdaa, checksum: 409
+2020:-12-24 05:34:33 [Thread-13] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:33 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:34:33 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:33 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:33 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:33 [Thread-12] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:37 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: ???
+2020:-12-24 05:34:37 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server ???
+2020:-12-24 05:34:37 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Anna","checksum":189}
+2020:-12-24 05:34:37 [Thread-14] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:34:37 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:37 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:37 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:37 [Thread-14] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:37 [Thread-15] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: a ya mogu
+2020:-12-24 05:34:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server a ya mogu
+2020:-12-24 05:34:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Anna","checksum":819}
+2020:-12-24 05:34:46 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: a ya mogu, checksum: 819
+2020:-12-24 05:34:46 [Thread-12] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:46 [Thread-16] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:34:46 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:46 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:46 [Thread-16] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: 
+2020:-12-24 05:34:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server 
+2020:-12-24 05:34:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Anna","checksum":0}
+2020:-12-24 05:34:48 [Thread-13] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:48 [Thread-17] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:34:48 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:48 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:48 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:34:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: asdadas
+2020:-12-24 05:34:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server asdadas
+2020:-12-24 05:34:59 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Anna","checksum":721}
+2020:-12-24 05:34:59 [Thread-14] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:34:59 [Thread-18] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:34:59 [Thread-18] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:34:59 [Thread-18] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:34:59 [Thread-18] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:35:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: sasd
+2020:-12-24 05:35:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sasd
+2020:-12-24 05:35:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":427}
+2020:-12-24 05:35:02 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: sasd, checksum: 427
+2020:-12-24 05:35:02 [Thread-15] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 05:35:02 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:35:02 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:35:02 [Thread-15] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:35:02 [Thread-16] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:35:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: dsaas
+2020:-12-24 05:35:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server dsaas
+2020:-12-24 05:35:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Anna","checksum":524}
+2020:-12-24 05:35:04 [Thread-19] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:35:04 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:35:04 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:35:04 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:35:04 [Thread-19] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 05:35:04 [Thread-20] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Anna was sent
+2020:-12-24 05:35:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: sada
+2020:-12-24 05:35:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server sada
+2020:-12-24 05:35:13 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":409}
+2020:-12-24 05:35:13 [Thread-21] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer

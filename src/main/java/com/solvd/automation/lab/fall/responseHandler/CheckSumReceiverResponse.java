@@ -3,6 +3,7 @@ package com.solvd.automation.lab.fall.responseHandler;
 import com.solvd.automation.lab.fall.gui.AuthorizationGui;
 import com.solvd.automation.lab.fall.gui.ClientGui;
 import com.solvd.automation.lab.fall.gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.userServer.MyServer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,12 +20,13 @@ public class CheckSumReceiverResponse implements Runnable {
         code = response.substring(codeFrom, codeTo);
 
         int checkSumFromDescriptionFrom = response.indexOf(":", codeFrom + 1) + 1;
-        int checkSumFromDescriptionTo = response.indexOf(",", codeTo + 1);
+        int checkSumFromDescriptionTo = response.indexOf(",", codeTo + 1) - 2;
         checkSumFromDescription = response.substring(checkSumFromDescriptionFrom, checkSumFromDescriptionTo);
 
         int checksumFrom = response.indexOf(":", checkSumFromDescriptionFrom + 1) + 1;
         int checksumTo = response.indexOf("}");
         checksum = Integer.parseInt(response.substring(checksumFrom, checksumTo));
+
     }
 
     @Override
@@ -33,7 +35,14 @@ public class CheckSumReceiverResponse implements Runnable {
 
         switch (code) {
             case ("\"0\""):
-                LOGGER.info("Checksum: " + checksum);
+                String login = checkSumFromDescription.substring(checkSumFromDescription.indexOf("from") + 5);
+
+                LOGGER.info(checkSumFromDescription + "; " + "login: " + login);
+                MyServer clientServer = MyServer.getMyServer();
+                clientServer.setCheckSumFromServer(login, checksum);
+
+                break;
+
             case ("\"1\""):
             case ("\"2\""):
             case ("\"3\""):
