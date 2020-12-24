@@ -1,26 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Configuration status="INFO">
     <Appenders>
         <Console name="AppConsole" target="SYSTEM_OUT">
-            <PatternLayout responsePattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{10} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy:-MM-dd HH:mm:ss} [%t] %-5level %logger{8} - %msg%n"/>
         </Console>
+
         <RollingFile name="FileRolling" fileName="logs/log_roll.txt" append="true"
-                     filePattern="logs/log_%d{yyyy.MM.dd HH:mm:ss.SSS}-%i.txt">
-            <PatternLayout responsePattern="%d{yyyy:-MM-dd HH:mm:ss} [%t] %-5level %logger{5} - %msg%n"/>
+                     filePattern="logs/log_roll.txt">
+            <PatternLayout pattern="%d{yyyy:-MM-dd HH:mm:ss} [%t] %-5level %logger{8} - %msg%n"/>
             <Policies>
-                <SizeBasedTriggeringPolicy size="20 KB"/>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1MB" />
             </Policies>
-            <DefaultRolloverStrategy max="15"/>
+            <DefaultRolloverStrategy max="9999"/>
         </RollingFile>
     </Appenders>
 
     <Loggers>
-        <Logger name="ConsoleLogger" level="debug">
+        <Logger name="ConsoleLogger" level="info">
             <AppenderRef ref="AppConsole"/>
         </Logger>
-        <Logger name="FileLogger" level="debug">
+        <Logger name="FileLogger" level="info">
             <AppenderRef ref="FileRolling"/>
         </Logger>
-        <Root level="debug">
+        <Root level="info">
             <AppenderRef ref="FileRolling"/>
             <AppenderRef ref="AppConsole"/>
         </Root>

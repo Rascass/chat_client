@@ -1,35 +1,80 @@
 package com.solvd.automation.lab.fall.userServer;
 
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.io.PropertyReader;
+import com.solvd.automation.lab.fall.gui.ClientGui;
+import com.solvd.automation.lab.fall.gui.HubGui;
+import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import javax.swing.*;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MyServer implements Runnable {
 
-    private List<BufferedWriter> userOutputStreams;
+    private static final Logger LOGGER = LogManager.getLogger();
+    private static MyServer instance = null;
+
+    private Set<ConnectionHandler> connections;
+    private int port;
+    private HubGui hubGui;
+    private final String ip = "127.0.0.1";
+    private String login;
+
+    private MyServer(int port, String login) {
+        this.port = port;
+        this.login = login;
+    }
+
+    public static synchronized MyServer createMyServer(int port, String login) {
+        if (instance == null) {
+            instance = new MyServer(port, login);
+        }
+        return instance;
+    }
+
+    public static MyServer getMyServer() {
+        return instance;
+    }
+
+    public synchronized void setCheckSumFromServer(String login, int checksumServer) {
+        Iterator<ConnectionHandler> it = connections.iterator();
+
+        while (it.hasNext()) {
+            ConnectionHandler connectionHandler = it.next();
+            LOGGER.info("Setting checksumServer");
+            if (connectionHandler.getUserLogin().equals(login)) {
+                LOGGER.info("Found connection");
+                connectionHandler.setCheckSumServer(checksumServer);
+                break;
+            }
+        }
+    }
 
     public void run() {
 
-        int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.USER_PORT_KEY));
-        userOutputStreams = new ArrayList<>();
+        LOGGER.info("Starting client server...");
+        connections = new HashSet<>();
 
         try {
-            ServerSocket serverSocket = new ServerSocket(8002);
+
+            ServerSocket serverSocket = new ServerSocket(port);
+
+            this.createSelfConnection();
+
             while (true) {
                 Socket userSocket = serverSocket.accept();
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(userSocket.getOutputStream()));
-                userOutputStreams.add(out);
 
-                Thread client = new Thread(new UserHandler(userSocket));
+                ConnectionHandler connection = new ConnectionHandler(userSocket);
+
+                connections.add(connection);
+
+                Thread client = new Thread(connection);
                 client.start();
 
-                System.out.println("Got a connection");
+                LOGGER.info("Got a new connection");
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -37,30 +82,46 @@ public class MyServer implements Runnable {
 
     }
 
+    private void createSelfConnection() {
+        LOGGER.info("Creating a connection to your own server with port: " + port);
+        UserConnection selfConnection = new UserConnection(ip, port, login, login);
+
+        hubGui = HubGui.getHub();
+        JFrame frame = hubGui.createHubFrame("MyHub", selfConnection, login);
+        ClientGui.resetFrameTo(frame);
+    }
+
     public void sendEveryOne(String message) {
-        for (BufferedWriter writer : userOutputStreams) {
-            try {
-                writer.write(message);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+
+        LOGGER.info("Printing message to everyone: " + message);
+
+        Iterator<ConnectionHandler> iterator = connections.iterator();
+        while (iterator.hasNext()) {
+
+            ConnectionHandler connectionHandler = iterator.next();
+            connectionHandler.writer(message);
         }
     }
 
-
-    public class UserHandler implements Runnable {
+    public class ConnectionHandler implements Runnable {
         private BufferedReader in;
-        private Socket userSocket;
+        private BufferedWriter out;
+        private String userLogin;
+        private int checksumServer;
 
-        public UserHandler(Socket socket) {
+        public ConnectionHandler(Socket socket) {
+
             try {
-                this.userSocket = socket;
 
-                in = new BufferedReader(new InputStreamReader(userSocket.getInputStream()));
+                out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                userLogin = in.readLine();
+
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
+
 
         @Override
         public void run() {
@@ -70,11 +131,64 @@ public class MyServer implements Runnable {
             try {
                 while ((tmp = in.readLine()) != null) {
                     message = tmp;
-                    sendEveryOne(message);
+                    int checksumClient = findChecksum(message);
+                    LOGGER.info("Read message: " + message + ", checksumClient: " + checksumClient);
+
+                    checksumServer = -1;
+                    while (checksumServer == -1) {
+                        LOGGER.info(login +" waiting for checksumServer to be setted");
+                    }
+
+                    LOGGER.info("Checksum setted");
+
+                    this.checksumCompare(checksumClient, checksumServer, message);
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
+        }
+
+        private synchronized void checksumCompare(int checksumClient, int checksumServer, String message) {
+
+
+            LOGGER.info("ChecksumClient: " + checksumClient + "; ChecksumServer: " + checksumServer);
+            if (checksumServer == checksumClient) {
+                LOGGER.info("Checksums matched, printing message into chat");
+                sendEveryOne(userLogin + ": " + message);
+
+            } else {
+                LOGGER.info("data integrity violated, message was not sent");
+            }
+        }
+
+        public void setCheckSumServer(int checksumServer) {
+            LOGGER.info("This checksum = checksumServer");
+            this.checksumServer = checksumServer;
+        }
+
+        public void writer(String message) {
+            try {
+                out.write(message);
+                out.newLine();
+                out.flush();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        private int findChecksum(String message) {
+            int sum = 0;
+            byte[] bytes = message.getBytes();
+
+            for (int i = 0; i < bytes.length; i++) {
+                sum += bytes[i];
+            }
+
+            return sum;
+        }
+
+        public String getUserLogin() {
+            return userLogin;
         }
     }
 }

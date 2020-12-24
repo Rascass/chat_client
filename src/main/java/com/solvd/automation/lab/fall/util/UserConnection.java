@@ -1,9 +1,7 @@
 package com.solvd.automation.lab.fall.util;
 
-import com.solvd.automation.lab.fall.Gui.ClientGui;
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.constant.PropertyConstant;
-import com.solvd.automation.lab.fall.io.PropertyReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.io.*;
@@ -11,49 +9,107 @@ import java.net.Socket;
 
 public class UserConnection implements Runnable {
 
-    private Socket socket;
+    private static final Logger LOGGER = LogManager.getLogger();
     private BufferedReader reader;
     private BufferedWriter writer;
     private JTextArea incoming;
+    private final String ip;
+    private final int port;
+    private String loginTo;
+    private String logInFrom;
 
-    public UserConnection(String ip) {
-        int port = Integer.parseInt(PropertyReader.getInstance().getValue(PropertyConstant.USER_PORT_KEY));
-        try {
-            socket = new Socket(ip, port);
-            reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-
-    }
-
-    public void setIncoming(JTextArea incoming) {
-        this.incoming = incoming;
+    public UserConnection(String ip, int port, String loginTo, String logInFrom) {
+        this.ip = ip;
+        this.port = port;
+        this.loginTo = loginTo;
+        this.logInFrom = logInFrom;
     }
 
     @Override
     public void run() {
-        String message;
 
         try {
-            while ((message = reader.readLine()) != null) {
-                System.out.println(message);
-                incoming.append(message);
-            }
+            Socket socket = new Socket(ip, port);
+            reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            this.setLoginOnServer();
+
+            MessageListener messageListener = new MessageListener();
+            Thread thread = new Thread(messageListener);
+            thread.start();
+
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
+    private class MessageListener implements Runnable {
+
+        @Override
+        public void run() {
+            try {
+
+                String message;
+
+                while ((message = reader.readLine()) != null) {
+                    LOGGER.info("Getting message from server: " + message);
+                    incoming.append(message);
+                    incoming.append("\n");
+                }
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+    }
+
     public void sendMessageToChat(String message) {
         try {
-            writer.write(message);
-            writer.newLine();
-            writer.flush();
+            LOGGER.info("Sending message to server " + message);
+
+            int checksum = this.findChecksum(message);
+
+            ServerConnection.getInstance().sendChecksum(logInFrom, loginTo, checksum);
+
+            this.write(message);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void setLoginOnServer() {
+        try {
+            this.write(logInFrom);
+        } catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    private void write(String message) throws IOException {
+        writer.write(message);
+        writer.newLine();
+        writer.flush();
+    }
+
+    private void write(int message) throws IOException {
+        writer.write(message);
+        writer.newLine();
+        writer.flush();
+    }
+
+    private int findChecksum(String message) {
+        int sum = 0;
+        byte[] bytes = message.getBytes();
+
+        for (int i = 0; i < bytes.length; i++) {
+            sum += bytes[i];
+        }
+
+        return sum;
+    }
+
+    public void setIncoming(JTextArea incoming) {
+        this.incoming = incoming;
     }
 }

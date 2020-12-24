@@ -1,22 +1,17 @@
 package com.solvd.automation.lab.fall.parser;
 
-import com.solvd.automation.lab.fall.responseHandler.ContactClientResponse;
-import com.solvd.automation.lab.fall.responseHandler.LogInResponse;
+import com.solvd.automation.lab.fall.responseHandler.*;
 import com.solvd.automation.lab.fall.exception.UnknownResponsePattern;
-import com.solvd.automation.lab.fall.responseHandler.RegistrationResponse;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class Parser {
+public class MyParser {
 
     public static void parse(String response) throws UnknownResponsePattern {
 
         System.out.println(response);
-        List<String> fields = Parser.findMessageFields(response);
+        List<String> fields = MyParser.findMessageFields(response);
 
         if (isFieldsEqualTo(fields, Pattern.LOGIN_RESPONSE_PATTERN)) {
 
@@ -30,10 +25,22 @@ public class Parser {
             Thread thread = new Thread(contactClientResponse);
             thread.start();
 
-        } else if(isFieldsEqualTo(fields, Pattern.REGISTRATION_RESPONSE_PATTERN)){
+        } else if (isFieldsEqualTo(fields, Pattern.REGISTRATION_RESPONSE_PATTERN)) {
 
             RegistrationResponse registrationResponse = new RegistrationResponse(response);
             Thread thread = new Thread(registrationResponse);
+            thread.start();
+
+        } else if (isFieldsEqualTo(fields, Pattern.CHECKSUM_SENDER_RESPONSE_PARSER)) {
+
+            ChecksumSenderResponse checksumSenderResponse = new ChecksumSenderResponse(response);
+            Thread thread = new Thread(checksumSenderResponse);
+            thread.start();
+
+        } else if (isFieldsEqualTo(fields, Pattern.CHECKSUM_GETTER_RESPONSE_PARSER)) {
+
+            CheckSumReceiverResponse checkSumReceiverResponse = new CheckSumReceiverResponse(response);
+            Thread thread = new Thread(checkSumReceiverResponse);
             thread.start();
 
         } else {

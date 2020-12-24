@@ -1,12 +1,12 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
-import com.solvd.automation.lab.fall.Gui.AuthorizationGui;
-import com.solvd.automation.lab.fall.Gui.ClientGui;
-import com.solvd.automation.lab.fall.Gui.MessengerGui;
-import com.solvd.automation.lab.fall.Gui.QuickMessageGui;
+import com.solvd.automation.lab.fall.gui.AuthorizationGui;
+import com.solvd.automation.lab.fall.gui.ClientGui;
+import com.solvd.automation.lab.fall.gui.QuickMessageGui;
 
 
 public class RegistrationResponse implements Runnable {
+
     private String code;
     private String regDescription;
 

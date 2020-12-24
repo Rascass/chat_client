@@ -1,30 +1,52 @@
-package com.solvd.automation.lab.fall.Gui;
+package com.solvd.automation.lab.fall.gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
 import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 
-public class MessengerGui {
+public class HubGui {
+
+    private static final Logger LOGGER = LogManager.getLogger();
+
+    private static HubGui instance = null;
     private JFrame frame;
     private JTextArea incoming;
     private JTextField outgoing;
+    private JPanel chatPanel;
     private JTextField contactLogin;
-    private JPanel chatPanel = new JPanel();
     private UserConnection userConnection;
+    private String login;
 
-    public JFrame createMessengerFrame() {
-        frame = new JFrame();
+    private HubGui() {
+    }
+
+    public synchronized static HubGui getHub() {
+        if (instance == null){
+            instance = new HubGui();
+        }
+
+        return instance;
+    }
+
+    public JFrame createHubFrame(String name, UserConnection connection, String login) {
+
+        this.login = login;
+
+        this.userConnection = connection;
+        Thread thread = new Thread(userConnection);
+        thread.start();
+
+        frame = new JFrame(name);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new BorderLayout());
 
-        JPanel findClientPanel = new JPanel();
-        findClientPanel.setLayout(new BoxLayout(findClientPanel, BoxLayout.X_AXIS));
-
+        chatPanel = new JPanel();
         chatPanel.setLayout(new BoxLayout(chatPanel, BoxLayout.Y_AXIS));
 
         JPanel sendPanel = new JPanel();
@@ -37,17 +59,15 @@ public class MessengerGui {
         JScrollPane incomingScroll = new JScrollPane(incoming);
         incomingScroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         incomingScroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        userConnection.setIncoming(incoming);
 
         outgoing = new JTextField(20);
 
         JButton sendButton = new JButton("Send");
         sendButton.addActionListener(new SendButtonListener());
 
-        sendPanel.add(outgoing);
-        sendPanel.add(sendButton);
-
-        chatPanel.add(incomingScroll);
-        chatPanel.add(sendPanel);
+        JPanel findClientPanel = new JPanel();
+        findClientPanel.setLayout(new BoxLayout(findClientPanel, BoxLayout.X_AXIS));
 
         contactLogin = new JTextField("Enter your friend's login", 20);
 
@@ -57,7 +77,12 @@ public class MessengerGui {
         findClientPanel.add(contactLogin);
         findClientPanel.add(findButton);
 
-        chatPanel.setVisible(true);
+        sendPanel.add(outgoing);
+        sendPanel.add(sendButton);
+
+        chatPanel.add(incomingScroll);
+        chatPanel.add(sendPanel);
+
         mainPanel.add(chatPanel, BorderLayout.CENTER);
         mainPanel.add(findClientPanel, BorderLayout.SOUTH);
 
@@ -68,10 +93,15 @@ public class MessengerGui {
         return frame;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
     public class SendButtonListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            LOGGER.info("HubGui sending message: "+ outgoing.getText());
             userConnection.sendMessageToChat(outgoing.getText());
             outgoing.setText("");
             outgoing.requestFocus();
@@ -82,16 +112,10 @@ public class MessengerGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            ServerConnection connection = new ServerConnection();
-            Thread thread = new Thread(connection);
-            thread.start();
+            ServerConnection connection = ServerConnection.getInstance();
 
             connection.findContact(contactLogin.getText());
         }
     }
-
-    public void setUpConnection(UserConnection userConnection){
-        chatPanel.setVisible(true);
-        this.userConnection = userConnection;
-    }
 }
+

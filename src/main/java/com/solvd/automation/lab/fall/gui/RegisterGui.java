@@ -1,4 +1,4 @@
-package com.solvd.automation.lab.fall.Gui;
+package com.solvd.automation.lab.fall.gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
 
@@ -8,23 +8,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
 
-public class AuthorizationGui {
+public class RegisterGui {
     private JFrame mainFrame;
     private JPanel authorizationPanel;
     private JTextField userLogin;
     private JPasswordField userPassword;
-    private JButton sendButton;
+    private JPasswordField repeatPassword;
     private JButton registerButton;
-    private Thread serverThread;
-    private ServerConnection serverConnectionRunnable;
+    private JButton logInButton;
 
-    public JFrame createAuthorizationFrame() {
+    public JFrame createRegistrationFrame() {
 
-        serverConnectionRunnable = new ServerConnection();
-        serverThread = new Thread(serverConnectionRunnable);
-        serverThread.start();
-
-        mainFrame = new JFrame("Authorization");
+        mainFrame = new JFrame("Registration");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         authorizationPanel = new JPanel();
@@ -33,68 +28,77 @@ public class AuthorizationGui {
         mainFrame.getContentPane().add(authorizationPanel);
 
         JPanel loginPanel = new JPanel();
-        GridLayout loginLayout = new GridLayout(2, 2, 5, 12);
+        GridLayout loginLayout = new GridLayout(3, 2, 5, 12);
         loginPanel.setLayout(loginLayout);
 
         Box buttonBox = new Box(BoxLayout.X_AXIS);
 
         JLabel loginLabel = new JLabel("Login");
         JLabel passwordLabel = new JLabel("Password");
+        JLabel repeatPasswordLabel = new JLabel("Repeat password");
 
         userLogin = new JTextField(12);
         userPassword = new JPasswordField(12);
+        repeatPassword = new JPasswordField(12);
 
         loginPanel.add(loginLabel);
         loginPanel.add(userLogin);
         loginPanel.add(passwordLabel);
         loginPanel.add(userPassword);
-
-        sendButton = new JButton("Log in");
-        sendButton.addActionListener(new SendButtonActionListener());
-        buttonBox.add(sendButton);
+        loginPanel.add(repeatPasswordLabel);
+        loginPanel.add(repeatPassword);
 
         registerButton = new JButton("Register");
         registerButton.addActionListener(new RegisterButtonListener());
         buttonBox.add(registerButton);
+
+        logInButton = new JButton("Log in");
+        logInButton.addActionListener(new LogInButtonListener());
+        buttonBox.add(logInButton);
 
         authorizationPanel.add(loginPanel);
         authorizationPanel.add(buttonBox);
 
         authorizationLayout.putConstraint(SpringLayout.NORTH, loginPanel, 10,
                 SpringLayout.NORTH, authorizationPanel);
-        authorizationLayout.putConstraint(SpringLayout.NORTH, buttonBox, 80,
+        authorizationLayout.putConstraint(SpringLayout.NORTH, buttonBox, 140,
                 SpringLayout.NORTH, authorizationPanel);
 
         mainFrame.setResizable(false);
-        mainFrame.setSize(350, 160);
+        mainFrame.setSize(350, 210);
         mainFrame.setVisible(true);
 
         return mainFrame;
-    }
-
-    public class SendButtonActionListener implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (!serverThread.isInterrupted()) {
-                serverThread.interrupt();
-            }
-            serverConnectionRunnable = new ServerConnection();
-            serverThread = new Thread(serverConnectionRunnable);
-            serverThread.start();
-
-            String login = userLogin.getText();
-            int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
-
-            serverConnectionRunnable.logIn(login, String.valueOf(passHash));
-        }
     }
 
     public class RegisterButtonListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            ClientGui.resetFrameTo(new RegisterGui().createRegistrationFrame());
+
+
+            int pass1 = Objects.hash(String.valueOf(userPassword.getPassword()));
+            int pass2 = Objects.hash(String.valueOf(repeatPassword.getPassword()));
+
+            if (pass1 == pass2) {
+
+                String login = userLogin.getText();
+                ServerConnection connection = ServerConnection.getInstance();
+
+                connection.register(login, String.valueOf(pass1));
+
+            } else {
+                new QuickMessageGui().go("Passwords don't match");
+            }
+        }
+    }
+
+    public class LogInButtonListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            ClientGui.resetFrameTo(new AuthorizationGui().createAuthorizationFrame());
         }
     }
 }
+
