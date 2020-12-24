@@ -1,6 +1,7 @@
 package com.solvd.automation.lab.fall.responseHandler;
 
 
+import com.solvd.automation.lab.fall.gui.HubGui;
 import com.solvd.automation.lab.fall.gui.MessengerGui;
 import com.solvd.automation.lab.fall.gui.QuickMessageGui;
 import com.solvd.automation.lab.fall.constant.PropertyConstant;
@@ -27,9 +28,11 @@ public class ContactClientResponse implements Runnable {
         int connectionTo = response.indexOf(",", codeTo + 1);
         connection = response.substring(connectionFrom, connectionTo);
 
-        int loginFrom = response.indexOf(":", connectionFrom + 1) + 1;
+        int loginFrom = response.indexOf(":", connectionTo + 1) + 1;
         int loginTo = response.indexOf("}");
         login = response.substring(loginFrom, loginTo);
+
+        LOGGER.info("Login: " + login);
     }
 
     @Override
@@ -44,10 +47,13 @@ public class ContactClientResponse implements Runnable {
 
                 LOGGER.info("find client IP: " + ip);
                 LOGGER.info("find client Port: " + port);
-                UserConnection userConnection = new UserConnection(ip, port,login);
+
+                String loginFrom = HubGui.getHub().getLogin();
+
+                UserConnection userConnection = new UserConnection(ip, port, login, loginFrom);
 
                 messengerGui = new MessengerGui();
-                messengerGui.createMessengerFrame("Connection " + login, userConnection, login);
+                messengerGui.createMessengerFrame(userConnection, login);
 
                 break;
             case ("\"1\""):

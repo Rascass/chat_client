@@ -16,11 +16,13 @@ public class UserConnection implements Runnable {
     private final String ip;
     private final int port;
     private String loginTo;
+    private String logInFrom;
 
-    public UserConnection(String ip, int port, String loginTo) {
+    public UserConnection(String ip, int port, String loginTo, String logInFrom) {
         this.ip = ip;
         this.port = port;
         this.loginTo = loginTo;
+        this.logInFrom = logInFrom;
     }
 
     @Override
@@ -30,6 +32,7 @@ public class UserConnection implements Runnable {
             Socket socket = new Socket(ip, port);
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            this.setLoginOnServer();
 
             MessageListener messageListener = new MessageListener();
             Thread thread = new Thread(messageListener);
@@ -62,16 +65,25 @@ public class UserConnection implements Runnable {
 
     public void sendMessageToChat(String message) {
         try {
-            LOGGER.info("Sending message to server");
+            LOGGER.info("Sending message to server " + message);
 
             int checksum = this.findChecksum(message);
 
-            ServerConnection.getInstance().sendChecksum("Dima", "Anna", checksum);
-            this.write(checksum);
+            ServerConnection.getInstance().sendChecksum(logInFrom, loginTo, checksum);
+
             this.write(message);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void setLoginOnServer() {
+        try {
+            this.write(logInFrom);
+        } catch (IOException ex){
+            ex.printStackTrace();
+        }
+
     }
 
     private void write(String message) throws IOException {

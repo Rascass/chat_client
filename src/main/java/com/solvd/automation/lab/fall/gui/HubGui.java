@@ -2,6 +2,8 @@ package com.solvd.automation.lab.fall.gui;
 
 import com.solvd.automation.lab.fall.util.ServerConnection;
 import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,6 +11,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class HubGui {
+
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private static HubGui instance = null;
     private JFrame frame;
     private JTextArea incoming;
@@ -29,7 +34,9 @@ public class HubGui {
         return instance;
     }
 
-    public JFrame createHubFrame(String name, UserConnection connection) {
+    public JFrame createHubFrame(String name, UserConnection connection, String login) {
+
+        this.login = login;
 
         this.userConnection = connection;
         Thread thread = new Thread(userConnection);
@@ -86,10 +93,15 @@ public class HubGui {
         return frame;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
     public class SendButtonListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            LOGGER.info("HubGui sending message: "+ outgoing.getText());
             userConnection.sendMessageToChat(outgoing.getText());
             outgoing.setText("");
             outgoing.requestFocus();

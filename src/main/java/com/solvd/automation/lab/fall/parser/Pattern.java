@@ -5,7 +5,7 @@ public enum Pattern {
     CONTACT_RESPONSE_PATTERN("code", "connection", "login"),
     REGISTRATION_RESPONSE_PATTERN("code","regDescription"),
     CHECKSUM_SENDER_RESPONSE_PARSER("code", "checkSumFromDescription"),
-    CHECKSUM_GETTER_RESPONSE_PARSER("code", "checksum");
+    CHECKSUM_GETTER_RESPONSE_PARSER("code", "checkSumToDescription","checkSum");
 
     private final String[] options;
 

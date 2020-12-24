@@ -20,24 +20,29 @@ public class MyServer implements Runnable {
     private int port;
     private HubGui hubGui;
     private final String ip = "127.0.0.1";
+    private String login;
 
-    public MyServer(int port) {
+    public MyServer(int port, String login) {
         this.port = port;
+        this.login = login;
     }
 
     public void run() {
 
+        LOGGER.info("Starting client server...");
         connections = new HashSet<>();
 
         try {
-            this.createSelfConnection();
 
             ServerSocket serverSocket = new ServerSocket(port);
+
+            this.createSelfConnection();
 
             while (true) {
                 Socket userSocket = serverSocket.accept();
 
                 ConnectionHandler connection = new ConnectionHandler(userSocket);
+
                 connections.add(connection);
 
                 Thread client = new Thread(connection);
@@ -53,14 +58,16 @@ public class MyServer implements Runnable {
 
     private void createSelfConnection() {
         LOGGER.info("Creating a connection to your own server with port: " + port);
-        UserConnection selfConnection = new UserConnection(ip, port, "my server");
+        UserConnection selfConnection = new UserConnection(ip, port, login, login);
 
         hubGui = HubGui.getHub();
-        JFrame frame = hubGui.createHubFrame("MyHub", selfConnection);
+        JFrame frame = hubGui.createHubFrame("MyHub", selfConnection, login);
         ClientGui.resetFrameTo(frame);
     }
 
     public void sendEveryOne(String message) {
+
+        LOGGER.info("Printing message to everyone: " + message);
 
         Iterator<ConnectionHandler> iterator = connections.iterator();
         while (iterator.hasNext()) {
@@ -73,17 +80,21 @@ public class MyServer implements Runnable {
     public class ConnectionHandler implements Runnable {
         private BufferedReader in;
         private BufferedWriter out;
+        private String userLogin;
 
         public ConnectionHandler(Socket socket) {
+
             try {
 
                 out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
                 in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                userLogin = in.readLine();
 
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
+
 
         @Override
         public void run() {
@@ -94,7 +105,10 @@ public class MyServer implements Runnable {
                 while ((tmp = in.readLine()) != null) {
                     message = tmp;
                     LOGGER.info("Read message: " + message);
-                    sendEveryOne(message);
+                    int checksum = findChecksum(message);
+
+                    LOGGER.info("And here we need somehow compare checksums... Message checksum: " + checksum);
+                    sendEveryOne(userLogin + ": " + message);
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -109,6 +123,17 @@ public class MyServer implements Runnable {
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
+        }
+
+        private int findChecksum(String message) {
+            int sum = 0;
+            byte[] bytes = message.getBytes();
+
+            for (int i = 0; i < bytes.length; i++) {
+                sum += bytes[i];
+            }
+
+            return sum;
         }
     }
 }

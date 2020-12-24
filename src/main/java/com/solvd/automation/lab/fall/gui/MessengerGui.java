@@ -1,6 +1,8 @@
 package com.solvd.automation.lab.fall.gui;
 
 import com.solvd.automation.lab.fall.util.UserConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,6 +11,9 @@ import java.awt.event.ActionListener;
 
 
 public class MessengerGui {
+
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private JFrame frame;
     private JTextArea incoming;
     private JTextField outgoing;
@@ -16,13 +21,13 @@ public class MessengerGui {
     private UserConnection userConnection;
     private String login;
 
-    public JFrame createMessengerFrame(String name, UserConnection connection, String login) {
+    public JFrame createMessengerFrame(UserConnection connection, String login) {
 
         this.userConnection = connection;
         Thread thread = new Thread(userConnection);
         thread.start();
 
-        frame = new JFrame(name);
+        frame = new JFrame(login);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new BorderLayout());
 
@@ -64,6 +69,7 @@ public class MessengerGui {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            LOGGER.info("Messenger sending message: "+ outgoing.getText());
             userConnection.sendMessageToChat(outgoing.getText());
             outgoing.setText("");
             outgoing.requestFocus();
