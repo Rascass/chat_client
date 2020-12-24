@@ -131,30 +131,35 @@ public class MyServer implements Runnable {
             try {
                 while ((tmp = in.readLine()) != null) {
                     message = tmp;
-                    int checksum = findChecksum(message);
-                    LOGGER.info("Read message: " + message + ", checksum: " + checksum);
+                    int checksumClient = findChecksum(message);
+                    LOGGER.info("Read message: " + message + ", checksumClient: " + checksumClient);
 
                     checksumServer = -1;
-                    while (true) {
-                        if (checksumServer>-1){
-                            break;
-                        }
+                    while (checksumServer == -1) {
+                        LOGGER.info(login +" waiting for checksumServer to be setted");
                     }
 
-                    if (checksumServer == checksum) {
-                        LOGGER.info("Checksums matched, printing message into chat");
-                        sendEveryOne(userLogin + ": " + message);
+                    LOGGER.info("Checksum setted");
 
-                    } else {
-                        LOGGER.info("data integrity violated, message was not sent");
-                    }
-
+                    this.checksumCompare(checksumClient, checksumServer, message);
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
 
+        private synchronized void checksumCompare(int checksumClient, int checksumServer, String message) {
+
+
+            LOGGER.info("ChecksumClient: " + checksumClient + "; ChecksumServer: " + checksumServer);
+            if (checksumServer == checksumClient) {
+                LOGGER.info("Checksums matched, printing message into chat");
+                sendEveryOne(userLogin + ": " + message);
+
+            } else {
+                LOGGER.info("data integrity violated, message was not sent");
+            }
+        }
 
         public void setCheckSumServer(int checksumServer) {
             LOGGER.info("This checksum = checksumServer");

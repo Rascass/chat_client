@@ -2758,3 +2758,692 @@
 2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
 2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
 2020:-12-24 05:35:13 [Thread-17] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 13:54:19 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:54:19 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64984
+2020:-12-24 13:54:28 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:54:28 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 64990
+2020:-12-24 13:54:44 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 13:54:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64984
+2020:-12-24 13:54:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 13:54:45 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65095
+2020:-12-24 13:54:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65095
+2020:-12-24 13:54:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:54:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 13:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 13:54:48 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 64990
+2020:-12-24 13:54:48 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65101
+2020:-12-24 13:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65101
+2020:-12-24 13:54:48 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:54:54 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 13:54:54 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 13:54:54 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 13:54:54 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65101
+2020:-12-24 13:54:54 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:54:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: AA
+2020:-12-24 13:54:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server AA
+2020:-12-24 13:54:56 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":130}
+2020:-12-24 13:54:56 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: AA, checksum: 130
+2020:-12-24 13:54:56 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - data integrity violated, message was not sent
+2020:-12-24 13:54:56 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 13:54:56 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 13:54:56 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 13:54:56 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 13:54:56 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 13:58:49 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:58:49 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65012
+2020:-12-24 13:58:59 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:58:59 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65022
+2020:-12-24 13:59:07 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 13:59:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 13:59:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65022
+2020:-12-24 13:59:07 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65133
+2020:-12-24 13:59:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65133
+2020:-12-24 13:59:07 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:59:14 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 13:59:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 13:59:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65012
+2020:-12-24 13:59:14 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65123
+2020:-12-24 13:59:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65123
+2020:-12-24 13:59:14 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:59:18 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 13:59:18 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 13:59:18 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 13:59:18 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65133
+2020:-12-24 13:59:18 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 13:59:21 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 13:59:21 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 13:59:21 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 13:59:21 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi, checksumClient: 177
+2020:-12-24 13:59:21 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 13:59:21 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - data integrity violated, message was not sent
+2020:-12-24 13:59:42 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:59:42 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65036
+2020:-12-24 13:59:46 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 13:59:46 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65042
+2020:-12-24 13:59:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 13:59:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65036
+2020:-12-24 13:59:57 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65147
+2020:-12-24 13:59:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 13:59:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65147
+2020:-12-24 13:59:57 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:00:03 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 14:00:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:00:03 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65042
+2020:-12-24 14:00:03 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65153
+2020:-12-24 14:00:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65153
+2020:-12-24 14:00:03 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:00:09 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:00:09 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:00:09 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:00:09 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65147
+2020:-12-24 14:00:09 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:00:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 14:00:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 14:00:12 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 14:00:12 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi, checksumClient: 177
+2020:-12-24 14:00:12 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - data integrity violated, message was not sent
+2020:-12-24 14:00:12 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 14:00:12 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:00:12 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:00:12 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:00:12 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:01:10 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:01:10 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65055
+2020:-12-24 14:01:13 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:01:13 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65062
+2020:-12-24 14:01:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 14:01:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:01:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65062
+2020:-12-24 14:01:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65173
+2020:-12-24 14:01:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65173
+2020:-12-24 14:01:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:01:35 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045260}
+2020:-12-24 14:01:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 14:01:38 [Thread-2] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65055
+2020:-12-24 14:01:38 [Thread-3] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:01:38 [Thread-2] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65166
+2020:-12-24 14:01:38 [Thread-3] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65166
+2020:-12-24 14:01:38 [Thread-3] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:01:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:01:45 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:01:45 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:01:45 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65173
+2020:-12-24 14:01:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:01:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Go
+2020:-12-24 14:01:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Go
+2020:-12-24 14:01:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":182}
+2020:-12-24 14:01:51 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Go, checksumClient: 182
+2020:-12-24 14:01:51 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:02:20 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:02:20 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65077
+2020:-12-24 14:02:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 14:02:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:02:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65077
+2020:-12-24 14:02:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65188
+2020:-12-24 14:02:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65188
+2020:-12-24 14:02:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:02:31 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:02:32 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65084
+2020:-12-24 14:02:38 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 14:02:38 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:02:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65084
+2020:-12-24 14:02:38 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65195
+2020:-12-24 14:02:38 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65195
+2020:-12-24 14:02:38 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:02:45 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:02:45 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:02:45 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:02:45 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65188
+2020:-12-24 14:02:45 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:02:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 14:02:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 14:02:50 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 14:02:50 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi, checksumClient: 177
+2020:-12-24 14:02:50 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 14:02:50 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:02:50 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:02:50 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:02:50 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:02:50 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:08:23 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:08:23 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65111
+2020:-12-24 14:08:26 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:08:26 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65117
+2020:-12-24 14:08:29 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 14:08:30 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65111
+2020:-12-24 14:08:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:08:30 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65222
+2020:-12-24 14:08:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65222
+2020:-12-24 14:08:30 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:08:36 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 14:08:36 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:08:36 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65117
+2020:-12-24 14:08:36 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65228
+2020:-12-24 14:08:36 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65228
+2020:-12-24 14:08:37 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:08:41 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:08:41 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:08:41 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:08:41 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65222
+2020:-12-24 14:08:41 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:08:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Gi
+2020:-12-24 14:08:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Gi
+2020:-12-24 14:08:46 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":176}
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Gi, checksumClient: 176
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksum setted
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 14:08:46 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: Gi
+2020:-12-24 14:08:46 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Gi
+2020:-12-24 14:08:46 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Gi
+2020:-12-24 14:08:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.HubGui - HubGui sending message: IDK HOW IT WORKS
+2020:-12-24 14:08:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server IDK HOW IT WORKS
+2020:-12-24 14:08:57 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Dima","loginTo":"Dima","checksum":1113}
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: IDK HOW IT WORKS, checksumClient: 1113
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Dima; login: Dima
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksum setted
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 14:08:57 [Thread-5] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Dima: IDK HOW IT WORKS
+2020:-12-24 14:08:57 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: IDK HOW IT WORKS
+2020:-12-24 14:08:57 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Dima: IDK HOW IT WORKS
+2020:-12-24 14:09:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: me too
+2020:-12-24 14:09:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server me too
+2020:-12-24 14:09:02 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":580}
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: me too, checksumClient: 580
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-10] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-10] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksum setted
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 14:09:02 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: me too
+2020:-12-24 14:09:02 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: me too
+2020:-12-24 14:09:02 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: me too
+2020:-12-24 14:10:28 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:10:28 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65132
+2020:-12-24 14:10:41 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:10:41 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65142
+2020:-12-24 14:10:44 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:10:44 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65149
+2020:-12-24 14:10:48 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Dima","password":2130200}
+2020:-12-24 14:10:49 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:10:49 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65142
+2020:-12-24 14:10:49 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65253
+2020:-12-24 14:10:49 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65253
+2020:-12-24 14:10:49 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:10:55 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Anna","password":2045663}
+2020:-12-24 14:10:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:10:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65149
+2020:-12-24 14:10:55 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65260
+2020:-12-24 14:10:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65260
+2020:-12-24 14:10:55 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:11:04 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:11:04 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:11:04 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:11:04 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65253
+2020:-12-24 14:11:04 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:11:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Hi
+2020:-12-24 14:11:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Hi
+2020:-12-24 14:11:08 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Anna","loginTo":"Dima","checksum":177}
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Hi, checksumClient: 177
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-7] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Anna; login: Anna
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-7] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksum setted
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 14:11:08 [Thread-6] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Anna: Hi
+2020:-12-24 14:11:08 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Hi
+2020:-12-24 14:11:08 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Anna: Hi
+2020:-12-24 14:11:18 [main] INFO  com.solvd.automation.lab.fall.gui.ClientGui - Starting client
+2020:-12-24 14:11:18 [main] INFO  com.solvd.automation.lab.fall.util.ServerConnection - Clients address: 65159
+2020:-12-24 14:11:27 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - logIn message{"login":"Lena","password":2364715}
+2020:-12-24 14:11:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Starting client server...
+2020:-12-24 14:11:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Port in use: 65159
+2020:-12-24 14:11:27 [Thread-1] INFO  com.solvd.automation.lab.fall.responseHandler.LogInResponse - Creating client's own server with port: 65270
+2020:-12-24 14:11:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Creating a connection to your own server with port: 65270
+2020:-12-24 14:11:27 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:11:39 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - findContact message{"contactLogin":"Dima"}
+2020:-12-24 14:11:39 [Thread-0] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - Login: Dima
+2020:-12-24 14:11:39 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client IP: 127.0.0.1
+2020:-12-24 14:11:39 [Thread-6] INFO  com.solvd.automation.lab.fall.responseHandler.ContactClientResponse - find client Port: 65253
+2020:-12-24 14:11:39 [Thread-2] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Got a new connection
+2020:-12-24 14:11:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.gui.MessengerGui - Messenger sending message: Privet
+2020:-12-24 14:11:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.UserConnection - Sending message to server Privet
+2020:-12-24 14:11:51 [AWT-EventQueue-0] INFO  com.solvd.automation.lab.fall.util.ServerConnection - sending checksum message: {"loginFrom":"Lena","loginTo":"Dima","checksum":634}
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Read message: Privet, checksumClient: 634
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.ChecksumSenderResponse - checksum to Dima was sent
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.responseHandler.CheckSumReceiverResponse - checksum from Lena; login: Lena
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Setting checksumServer
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Found connection
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-9] INFO  com.solvd.automation.lab.fall.userServer.MyServer - This checksum = checksumServer
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Dima waiting for checksumServer to be setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksum setted
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Checksums matched, printing message into chat
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.userServer.MyServer - Printing message to everyone: Lena: Privet
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Lena: Privet
+2020:-12-24 14:11:51 [Thread-4] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Lena: Privet
+2020:-12-24 14:11:51 [Thread-8] INFO  com.solvd.automation.lab.fall.util.UserConnection - Getting message from server: Lena: Privet
