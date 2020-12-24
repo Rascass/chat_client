@@ -4,13 +4,15 @@
         <Console name="AppConsole" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy:-MM-dd HH:mm:ss} [%t] %-5level %logger{8} - %msg%n"/>
         </Console>
+
         <RollingFile name="FileRolling" fileName="logs/log_roll.txt" append="true"
-                     filePattern="logs/log_%d{yyyy.MM.dd HH:mm:ss.SSS}-%i.txt">
+                     filePattern="logs/log_roll.txt">
             <PatternLayout pattern="%d{yyyy:-MM-dd HH:mm:ss} [%t] %-5level %logger{8} - %msg%n"/>
             <Policies>
-                <SizeBasedTriggeringPolicy size="20 KB"/>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1MB" />
             </Policies>
-            <DefaultRolloverStrategy max="10"/>
+            <DefaultRolloverStrategy max="9999"/>
         </RollingFile>
     </Appenders>
 

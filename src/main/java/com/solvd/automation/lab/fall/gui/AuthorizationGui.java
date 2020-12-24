@@ -80,8 +80,14 @@ public class AuthorizationGui {
 
             String login = userLogin.getText();
             int passHash = Objects.hash(String.valueOf(userPassword.getPassword()));
-            LOGGER.debug("Log in pressed");
-            serverConnection.logIn(login, String.valueOf(passHash));
+            LOGGER.info("Log in pressed with login: " + login +", passHash: " + passHash);
+
+            int emptyPassHashFieldValue = 31;
+            if (login.equals("") || passHash == emptyPassHashFieldValue) {
+                new QuickMessageGui().go("you need to fill all fields");
+            } else {
+                serverConnection.logIn(login, String.valueOf(passHash));
+            }
         }
     }
 
